@@ -7,6 +7,14 @@ const sourcemaps = require('gulp-sourcemaps'); // to create a map
 const uglify = require('gulp-uglify'); // to minify js scripts
 const server = require('gulp-webserver'); // to start a server
 
+
+// html task 
+gulp.task('html-task', async function(){
+    return gulp.src('project/index.html')
+            .pipe(gulp.dest('dist'))
+            .pipe(livereload());
+});
+
 // Server Task
 gulp.task('server', async function() {
     gulp.src('project')	// <-- your app folder
@@ -18,4 +26,11 @@ gulp.task('server', async function() {
 });
 
 
-gulp.task('default', gulp.parallel('server'));
+// watch task
+gulp.task('watch', async function(){
+    livereload.listen();
+    gulp.watch(['project/index.html'], gulp.series('html-task'));
+});
+
+// Default task 
+gulp.task('default', gulp.parallel('server','watch'));
