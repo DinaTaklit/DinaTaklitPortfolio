@@ -1,6 +1,17 @@
 // Global styling for this template
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+}
 body {
     overflow-x: hidden;
+    font-family: $font-family-base;
 }
 
 p {
@@ -18,15 +29,47 @@ p {
         font-size: 1rem;
         font-weight: 400;
         font-style: italic;
-        font-family: $subheadings-font-family;
+        font-family: $headings-font-family;
         margin-bottom: 4rem;
     }
 }
 
-@include media-breakpoint-up(md) {
-    section {
-        padding: 9rem 0;
-    }
+h1,
+h2,
+h3,
+h4 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: $headings-font-family;
+}
+
+a {
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a a:focus {
+  outline: none;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+ul, ol {
+  list-style: outside none none;
+}
+
+ul li, ol li {
+  list-style: none;
+}
+
+.script-font {
+  font-family: $font-family-script;
 }
 
 // Highlight color customization
