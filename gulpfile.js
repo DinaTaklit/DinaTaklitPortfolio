@@ -66,7 +66,7 @@ function server() {
 function watchFiles() {
     livereload.listen();
     gulp.watch("src/index.html", html);
-    gulp.watch(['src/public/scss/*.scss','project/public/scss/**/*.scss'], css);
+    gulp.watch(['src/public/scss/*.scss','src/public/scss/**/*.scss'], css);
     gulp.watch('src/public/js/*.js', js);
     gulp.watch("src/public/vendor/**/*", gulp.parallel(vendor_clean, vendor_module));
 }
