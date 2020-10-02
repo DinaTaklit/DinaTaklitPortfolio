@@ -6,7 +6,8 @@ const livereload = require('gulp-livereload'); // to make live reload
 const sourcemaps = require('gulp-sourcemaps'); // to create a map
 const uglify = require('gulp-uglify'); // to minify js scripts
 const webserver = require('gulp-webserver'); // to start a server
-var debug = require("gulp-debug");
+var debug = require("gulp-debug"); // for debugging
+const del = require("del"); // to delete files and folders
 
 // html task
 function html(){
@@ -30,13 +31,26 @@ function css(){
             .pipe(livereload());
 }
 
+// js task
+function js(){
+    return gulp.src('src/public/js/*.js')
+           .pipe(concat('main.js'))
+           .pipe(uglify())
+           .pipe(gulp.dest('dist/public/js'))
+           .pipe(livereload());
+}
+
 // vendor task
-function vendor(){
+function vendor_module(){
     return gulp.src('src/public/vendor/**/*')
            .pipe(gulp.dest('dist/public/vendor'))
            .pipe(livereload());
 }
 
+// Clean vendor
+function vendor_clean() {
+    return del(["dist/public/vendor/"]);
+}
 
 // Server Task
 function server() {
@@ -53,17 +67,22 @@ function watchFiles() {
     livereload.listen();
     gulp.watch("src/index.html", html);
     gulp.watch(['src/public/scss/*.scss','project/public/scss/**/*.scss'], css);
-    gulp.watch("src/public/vendor/**/*", vendor);
+    gulp.watch('src/public/js/*.js', js);
+    gulp.watch("src/public/vendor/**/*", gulp.parallel(vendor_clean, vendor_module));
 }
 
-  // Define complex tasks
-  const build = gulp.series(html,css,vendor);
-  const watch = gulp.series(build, gulp.parallel(watchFiles, server));
 
-  // Export tasks
-  exports.html = html;
-  exports.css = css;
-  exports.vendor = vendor;
-  exports.build = build;
-  exports.watch = watch;
-  exports.default = watch;
+
+// Define complex tasks
+const vendor = gulp.series(vendor_clean, vendor_module);
+const build = gulp.series(html,css,js,vendor);
+const watch = gulp.series(build, gulp.parallel(watchFiles, server));
+
+// Export tasks
+exports.html = html;
+exports.css = css;
+exports.js = js;
+exports.vendor = vendor;
+exports.build = build;
+exports.watch = watch;
+exports.default = watch;
