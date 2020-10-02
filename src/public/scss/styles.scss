@@ -1,9 +1,6 @@
 // Import variables
 @import "./variables.scss";
 
-// Import Bootstrap
-@import "bootstrap/scss/bootstrap.scss";
-
 // Global CSS
 @import "./global.scss";
 
@@ -14,7 +11,6 @@
 // Sections
 @import "./sections/masthead.scss";
 @import "./sections/portfolio.scss";
-@import "./sections/timeline.scss";
 @import "./sections/team.scss";
 @import "./sections/contact.scss";
 @import "./sections/footer.scss";
