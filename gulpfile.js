@@ -30,6 +30,13 @@ function css(){
             .pipe(livereload());
 }
 
+// vendor task
+function vendor(){
+    return gulp.src('src/public/vendor/**/*')
+           .pipe(gulp.dest('dist/public/vendor'))
+           .pipe(livereload());
+}
+
 
 // Server Task
 function server() {
@@ -46,16 +53,17 @@ function watchFiles() {
     livereload.listen();
     gulp.watch("src/index.html", html);
     gulp.watch(['src/public/scss/*.scss','project/public/scss/**/*.scss'], css);
+    gulp.watch("src/public/vendor/**/*", vendor);
 }
 
   // Define complex tasks
-
-  const build = gulp.series(html,css);
+  const build = gulp.series(html,css,vendor);
   const watch = gulp.series(build, gulp.parallel(watchFiles, server));
 
   // Export tasks
   exports.html = html;
   exports.css = css;
+  exports.vendor = vendor;
   exports.build = build;
   exports.watch = watch;
   exports.default = watch;
