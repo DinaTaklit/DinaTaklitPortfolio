@@ -1,0 +1,43 @@
+#main-nav.navbar {
+    // background-color: white;
+}
+#main-nav{
+    .brand-div{
+        display: flex;
+        align-items: center;
+        .brand-name{
+            font-size: 2rem;
+            font-weight: 800;
+            padding-left: .6rem;
+            font-family: $headings-font-family;
+            color: $primary;
+            &:hover{
+                color: darken($color: $primary, $amount: 5);
+            }
+        }
+    }
+    .navbar-nav {
+        .nav-item{
+            .nav-link{
+                color: #333;
+                font-size: 1.2rem;
+                font-weight: 800;
+                padding: 0 1.2rem;
+                margin-top: 1.2rem;
+                margin-bottom: 1.2rem;
+                line-height: 3.2rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                background: transparent;
+                &:hover,
+                &.active,
+                &:focus{
+                    color: $primary;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+
