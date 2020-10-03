@@ -64,10 +64,25 @@ ul li, ol li {
         margin-bottom: 4rem;
     }
 }
-
 .script-font {
   font-family: $font-family-script;
 }
+
+.section-title-header{
+    .section-title{
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+    }
+    p{
+      text-align: center;
+      font-weight: 400;
+      font-family: $font-family-script;
+    }
+}
+
 
 // Highlight color customization
 

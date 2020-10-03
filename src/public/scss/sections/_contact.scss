@@ -1,0 +1,49 @@
+/* Contact Form */
+#contact{
+    background-color:darken($contact-bg,5);
+}
+#contact .container-form{
+	left: 0%;
+	padding: 2rem 1.2rem;
+    .form-wrapper{
+    	background-color: $white;
+	    padding: 5rem;
+	    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	    .form-group{
+	    	margin-bottom: 2.5rem;
+	    }
+	    .form-control{
+			display: block;
+		    width: 100%;
+		    line-height: 2;
+		    font-size: 1.2rem;
+            color: $gray-700;
+		    text-transform: capitalize;
+		    background: $contact-bg;
+		    border: 1px solid transparent;
+		    padding: 1.6rem 1.5rem;
+		    border-radius: 0px;
+		    background-clip: padding-box;
+		}
+		.form-control:focus{
+			color: $gray-900;
+            // background-color: white;
+            border-bottom-width: 2px;
+		    border-bottom-color: $primary;
+            outline: 0;
+            box-shadow: none;
+		}
+     }
+     .form-submit{
+        .btn-common{
+            width: 100%;
+        }
+        i{
+            margin-right: .3rem;
+        }
+    }
+    .text-danger {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+}
