@@ -19,3 +19,14 @@
   outline: none;
   color: #fff;
 }
+
+
+.btn-common{
+    background-color: $primary;
+    &:hover{
+      color: #fff;
+      background: $red-hover;
+      box-shadow:  0 6px 22px rgba(0,0,0,0.1);
+      transition: all .2s ease-in-out;
+    }
+}

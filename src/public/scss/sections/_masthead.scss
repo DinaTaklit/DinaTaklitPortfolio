@@ -35,17 +35,17 @@ video[poster] {
         .sub-heading{
             font-size: 3rem;
         }
-        .hero-btn{
-            margin: 2rem 0;
-            text-transform: capitalize;
-            color: #fff;
-            background-color: $primary;
-            box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-            transition: all .2s ease-in-out;
-            &:hover{
-                background-color: darken($color: $primary, $amount: 10);
-            }
-        }
+        // .hero-btn{
+        //     margin: 2rem 0;
+        //     text-transform: capitalize;
+        //     color: #fff;
+        //     background-color: $primary;
+        //     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+        //     transition: all .2s ease-in-out;
+        //     &:hover{
+        //         background-color: darken($color: $primary, $amount: 10);
+        //     }
+        // }
         .social-icon{
             li{
                 display: inline-block;

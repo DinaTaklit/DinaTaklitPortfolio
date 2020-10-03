@@ -1,7 +1,7 @@
 // Override Bootstrap color system
 
 $red: #d73d4e;
-
+$red-hover: #F50057;
 // Override Bootstrap default state colors
 
 $white: #fff !default;
@@ -18,6 +18,10 @@ $black: #000 !default;
 
 
 $primary: $red;
-
+$primary-hover: $red-hover;
 // Override Bootstrap yiq lightness value
 $yiq-contrasted-threshold: 205;
+
+
+// Sections background
+$contact-bg: #f7f7f7;
