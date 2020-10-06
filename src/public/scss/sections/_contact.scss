@@ -1,10 +1,10 @@
 /* Contact Form */
 #contact{
-    background-color:darken($contact-bg,5);
+    background-color:$white;
 }
 #contact .container-form{
 	left: 0%;
-	padding: 2rem 1.2rem;
+	padding: 0 1.2rem;
     .form-wrapper{
     	background-color: $white;
 	    padding: 5rem;
