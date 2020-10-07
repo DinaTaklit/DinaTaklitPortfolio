@@ -1,0 +1,149 @@
+#certificates{
+	background: linear-gradient(264deg, rgba(23,23,23,1) 0%, rgba(33,33,33,1) 49%, rgba(23,23,23,1) 100%);
+	margin: 0;
+    color: white;
+    .certificates-wrapper{
+        .filters{
+            width: 100%;
+            text-align: center;
+            padding-bottom: 3rem;
+            ul {
+                padding: 1rem;
+                box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+                border-radius: 3rem;
+                background-color: #232323;
+                li {
+                    display: inline-block;
+                    padding: .9rem 1.8rem;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                    a{
+                        color: $gray-600;
+                    }
+                    &:hover{
+                        box-shadow: -1px 1px 11px rgba(0,0,0,.4);
+                        border-radius: 15px;
+                        a{
+                            color: $gray-400;
+                        }
+                    }
+                    &.active a{
+                        color: $primary;
+                        border: 1px solid $primary;
+                        border-radius: 15px;
+                        box-shadow: -1px 1px 8px 1px $primary;
+                        padding: .9rem 2rem;
+                    }
+                }
+            }
+        }
+
+        #certificates-container{
+            margin: auto;
+            .grid-item {
+                    height: 200px;
+                    overflow: hidden;
+                    text-align: center;
+                    width: 300px;
+                    border-radius: 1.4rem;
+                    img{
+                        // border: 4px solid $dark-gray;
+                        margin: .5rem .5rem;
+                        border-radius: 1.4rem;
+                        width:100%;
+                        height:auto;
+                        filter: url(filters.svg#grayscale);
+                        filter: $gray-600;
+                        -webkit-filter: grayscale(1);
+                        transition: 0.9s;
+                        &:hover{
+                            filter: none;
+                        }
+                    }
+                    &:hover .overlay {
+                        opacity: 1;
+                      }
+                }
+                .overlay {
+                    position: absolute;
+                    bottom: 0;
+                    background: rgb(0, 0, 0);
+                    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+                    color: #f1f1f1;
+                    width: 100%;
+                    transition: .5s ease;
+                    opacity:0;
+                    color: $white;
+                    font-size: 1.3rem;
+                    padding: .8rem;
+                    text-align: center;
+                  }
+        }
+        .isotope-pager{
+            text-align: center;
+            margin-top: 1.8rem;
+            a{
+                margin: 0 .3rem;
+                font-size: 1.3rem;
+                display: inline-block;
+                width: 4.2rem;
+                line-height: 2;
+                color: $gray-600;
+                font-weight: 600;
+                transition: 0.3s;
+                box-shadow: -1px 1px 11px rgba(0,0,0,.1);
+                border-radius: 25px;
+                background-color: #232323;
+                border: .5px solid $primary;
+                &:hover{
+                    color: $white;
+                    border: .5px solid $primary-hover;
+                    box-shadow: -1px 1px 8px 1px $primary-hover;
+                }
+            }
+            .active{
+                color: $primary;
+                box-shadow: -1px 1px 8px 1px $primary;
+            }
+
+            .prev{
+                border-radius: 30px 0 0 30px;
+            }
+            .next{
+                border-radius: 0 30px 30px 0;
+            }
+
+            a::before,
+            a:after{
+                content: "";
+                position: absolute;
+                border-top: 30px solid transparent;
+                border-bottom: 30px solid transparent;
+            }
+            .num::before,
+            .next::before{
+                border-right: 20px solid #2c3e50;
+                right: 100%;
+            }
+
+            .num:after,.prev:after{
+                border-right: 20px solid #f1f1f1;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width:300px){
+    #certificates{
+        .certificates-wrapper{
+            #certificates-container{
+                .grid-item {
+                    width: 250px;
+                    height: 180px;
+                }
+            }
+        }
+    }
+}

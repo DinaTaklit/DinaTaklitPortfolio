@@ -1,0 +1,129 @@
+#about{
+    .profile-card-wrapper{
+
+        .profile-card {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: $white;
+            transition: all .25s ease;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, .15);
+            &:hover {
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, .15);
+            }
+
+            .card-header {
+                border-radius: .5rem;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 2rem;
+                color: $white;
+                background: linear-gradient(0deg, $dark-blue,$red-hover);
+                // background: linear-gradient(135deg,#3f5efb, #fc466b);
+                border: none;
+                .profile-image {
+                    width: 120px;
+                    height: 120px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 5px solid white;
+                }
+
+                .profile-name {
+                    margin-top: .5rem;
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+
+                .profile-role {
+                    font-size: 1.05rem;
+                    color: #DDD;
+                }
+
+                .profile-location{
+                    margin-top: .5rem;
+                    margin-bottom: 2rem;
+                    font-size: 1.25rem;
+                    i{
+                        padding-right: .3rem;
+                    }
+                }
+
+                .divider {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    overflow: hidden;
+                    line-height: 0;
+                    transform: rotate(180deg);
+
+                    svg {
+                        position: relative;
+                        display: block;
+                        width: calc(150% + 1.5px);
+                        height: 50px;
+
+                        path {
+                            fill: $white;
+                        }
+                    }
+                }
+            }
+
+            .card-body {
+                padding: 2rem;
+
+                .title {
+                    color: $gray-700;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                    font-size: 1.05rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                .contact-list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .social-icon{
+                        li{
+                            display: inline-block;
+                            a{
+                                color: $gray-800;
+                                background: $white;
+                                width: 3rem;
+                                height: 3rem;
+                                line-height: 38px;
+                                display: block;
+                                text-align: center;
+                                border-radius: 100%;
+                                font-size: 1.3rem;
+                                margin: 1.1rem .5rem 1rem .5rem;
+                                transition: all 0.3s ease-in-out 0s;
+                                background-color: $primary;
+                                color: white;
+                                &:hover{
+                                    background-color: $red-hover;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            .profile-action{
+                display: flex;
+                .btn{
+                    // background-color: $dark-blue;
+                    border-radius: 0;
+                    border: 1px solid darken($color: $primary, $amount: 5);
+                }
+            }
+        }
+    }
+}
