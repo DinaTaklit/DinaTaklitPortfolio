@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="public/vendor/bootstrap/bootstrap.min.css">
 
     <!-- Font awesome -->
-        <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="public/vendor/fonts/css/font-awesome.all.min.css">
+
+    <!-- Magnific-popup  -->
+    <!-- Lightbox and modal dialog plugin. Can display inline HTML, iframes (YouTube video, Vimeo, Google Maps), or an image gallery. Animation effects are added with CSS3 transitions. For jQuery or Zepto. -->
+    <link rel="stylesheet" href="public/vendor/magnific-popup/1.1.0/magnific-popup.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/main.css">
@@ -135,6 +138,49 @@
                         <p class="longer-2"> Dina Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quis molestiae minus libero optio fugit repellat?</p>
                     </div>
                 </div>
+                <div class="profile-card-wrapper col-lg-6 md-6 sm-12">
+                    <div class="profile-card">
+                        <div class="card-header">
+                            <img class="profile-image image-fluid" src="public/assets/img/profile.jpg" alt="profile image">
+                            <div class="profile-name">Dina TAKLIT</div>
+                            <div class="profile-role">Web Developer</div>
+                            <div class="profile-location"><i class="fas fa-map-marker-alt"></i>Setif, Algeria (willed to relocate)</div>
+                            <div class="divider">
+                                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="contacts">
+                                <div class="title">Contacts</div>
+                                <div class="contact-list">
+                                    <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                                        <li>
+                                            <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li>
+                                          <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="facebook" href="#"><i class="fab fa-github-alt"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="facebook" href="#"><i class="fab fa-stack-overflow"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="facebook" href="#"><i class="fab fa-codepen"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-action">
+                            <a class="btn btn-large btn-common" href="">Contact Me</a>
+                            <a class="btn btn-large btn-common" href="">Portfolio</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -241,6 +287,134 @@
     </section>
     <!-- /Learn -->
 
+
+    <!-- Certificates  -->
+    <section id="certificates" class="section-bg page-section">
+        <div class="container">
+            <div class="section-header row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">My Certificates</h2>
+                        <p class="wow fadeInDown" data-wow-delay="0.2s">Here is some of my certificates. I do not believe a lot in certificates but I add them here just to show that the pathway of success is paved with a lot of hard working. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificates-wrapper">
+                <div class="filters filter-button-group">
+                    <ul>
+                        <li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
+                        <li><a href="javascript:void(0);" data-filter="udacity">Udacity</a></li>
+                        <li><a href="javascript:void(0);" data-filter="udemy">Udemy</a></li>
+                        <li><a href="javascript:void(0);" data-filter="others">Others</a></li>
+                    </ul>
+                </div>
+                <div id="certificates-container" class="isotope">
+                    <div class="grid-item" data-filter="udacity">
+                        <a class="popupimg" href="public/assets/img/certificates/udacity-fullstak.png">
+                        <img class="img-fluid" src="public/assets/img/certificates/udacity-fullstak.png">
+                        </a>
+                        <div class="overlay">Full Stack</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udacity">
+                        <a class="popupimg" href="public/assets/img/certificates/udacity-dataScience.png">
+                        <img class="img-fluid" src="public/assets/img/certificates/udacity-dataScience.png">
+                        </a>
+                        <div class="overlay">Data Science</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udacity">
+                        <a class="popupimg" href="public/assets/img/certificates/udacity-AI.png">
+                        <img class="img-fluid" src="public/assets/img/certificates/udacity-AI.png">
+                        </a>
+                        <div class="overlay">Artificiel Inteligence</div>
+                    </div>
+
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/udamy-sass.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/udamy-sass.jpg">
+                        </a>
+                        <div class="overlay">Sass</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/BootstrapJQuery.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/BootstrapJQuery.jpg">
+                        </a>
+                        <div class="overlay">Bootstrap & JQuery</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/udemy-bootstrap.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/udemy-bootstrap.jpg">
+                        </a>
+                        <div class="overlay">Bootstrap</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/udemy-webdesign.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/udemy-webdesign.jpg">
+                        </a>
+                        <div class="overlay">Web Design</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/udemy-wordpress.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/udemy-wordpress.jpg">
+                        </a>
+                        <div class="overlay">Wordpress</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/udemy-wordpress-elementor.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/udemy-wordpress-elementor.jpg">
+                        </a>
+                        <div class="overlay">Wordpress</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="others">
+                        <a class="popupimg" href="public/assets/img/certificates/onemonth-html.PNG">
+                        <img class="img-fluid" src="public/assets/img/certificates/onemonth-html.PNG">
+                        </a>
+                        <div class="overlay">HTML</div>
+                    </div>
+                    <div class="grid-item" data-filter="others">
+                        <a class="popupimg" href="public/assets/img/certificates/onemonth-responsivedesign.PNG">
+                        <img class="img-fluid" src="public/assets/img/certificates/onemonth-responsivedesign.PNG">
+                        </a>
+                        <div class="overlay">Responsive Design</div>
+                    </div>
+                    <div class="grid-item" data-filter="others">
+                        <a class="popupimg" href="public/assets/img/certificates/onemonth-javascript.PNG">
+                        <img class="img-fluid" src="public/assets/img/certificates/onemonth-javascript.PNG">
+                        </a>
+                        <div class="overlay">Java Script</div>
+                    </div>
+                    <div class="grid-item" data-filter="others">
+                        <a class="popupimg" href="public/assets/img/certificates/fwd.PNG">
+                        <img class="img-fluid" src="public/assets/img/certificates/fwd.PNG">
+                        </a>
+                        <div class="overlay">Web Developement</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="others">
+                        <a class="popupimg" href="public/assets/img/certificates/SoloLearnHtml.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/SoloLearnHtml.jpg">
+                        </a>
+                        <div class="overlay">HTML</div>
+                    </div>
+
+
+
+                </div>
+                <div class="isotope-pager">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Certificates -->
+
     <!-- Contact  -->
     <section id="contact" class="page-section">
         <div class="container">
@@ -302,6 +476,11 @@
     <script src="public/vendor/jquery/jquery-3.5.1.slim.min.js"></script>
     <script src="public/vendor/poper.min.js"></script>
     <script src="public/vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- Magnific-popup -->
+    <script src="public/vendor/magnific-popup/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- isotope -->
+    <!-- Filter and sort magical layouts -->
+    <script src="public/vendor/isotop/3.0.6/isotope.pkgd.min.js"></script>
 
     <!-- Custom Js -->
     <script src="public/js/main.js"></script>
