@@ -1,0 +1,115 @@
+#portfolio{
+    .projects-wrapper{
+        .card {
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px #ccc;
+            width: 300px;
+            overflow: hidden;
+            .card-header {
+                position: relative;
+                width: 100%;
+                height: 320px;
+                background-image: url('./../assets/img/portfolio/oxbridge.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                &:hover{
+                    cursor: pointer;
+                    animation-duration: 11s;
+                    animation-name: autoscroll;
+                    animation-timing-function: ease-out;
+                }
+            }
+            .card-bottom {
+                background-color: $primary;
+                border-radius: 0 0px .5rem .5rem;
+                color: white;
+                width: 100%;
+                .read-more{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: .5rem 0;
+                    p{
+                        margin: 0;
+                        font-size: 1.3rem;
+                    }
+                    i {
+                        font-size: 1.3rem;
+                    }
+                }
+                .card-body {
+                    position: absolute;
+                    bottom: 0;
+                    height: 300px;
+                    width: 100%;
+                    transition: all 1s;
+                    top: 100%;
+                    border-radius: .5rem;
+                    margin-top:100px;
+                    display: flex;
+                    background-color: $primary;
+                    .card-body-box{
+                        width: 100%;
+                        height: 100%;
+                        padding: 2rem 1rem;
+                        background-color: white;
+                        color: $black;
+                        border-radius: .5rem;
+                        .card-body-title{
+                            font-size: 1.9rem;
+                            margin-bottom: .7rem;
+                            color: $primary;
+                        }
+                        .card-body-desc{
+                            font-size: 1.1rem;
+                            color: $gray-700;
+                        }
+                        .card-body-keys{
+                            font-size: .95rem;
+                            color: $gray-600;
+                            i{
+                                margin-right: .3rem;
+                                color: $primary;
+                            }
+                        }
+                        .card-body-action{
+                            display: flex;
+                            justify-content: space-between;
+                            .btn{
+                                padding: .4rem .7rem;
+                                font-size: 1.1rem;
+                                font-weight: 700;
+                                i{
+                                    font-size: 1.1rem;
+                                    margin-right: .3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover .card-body {
+                    margin-top: 0;
+                    top: 20%;
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes autoscroll {
+    0% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+}
+

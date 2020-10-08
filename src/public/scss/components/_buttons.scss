@@ -20,7 +20,6 @@
   color: #fff;
 }
 
-
 .btn-common{
     background-color: $primary;
     &:hover{
@@ -32,4 +31,16 @@
 }
 .btn-large{
     width: 100%;
+}
+.btn-border{
+    border: 2px solid $primary;
+    background-color: none;
+    color: $primary;
+    padding: .7rem .7rem;
+    &:hover{
+        border: none;
+        background-color: $primary;
+        color: $white;
+        transition: all .2s ease-in-out;
+    }
 }
