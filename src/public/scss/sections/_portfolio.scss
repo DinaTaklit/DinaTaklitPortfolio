@@ -164,6 +164,15 @@
                 animation-duration: 8s;
             }
         }
+        #project8{
+            background-image: url('./../assets/img/portfolio/dz-inventors.png');
+        }
+        #project9{
+            background-image: url('./../assets/img/portfolio/avos-offres.png');
+            &:hover{
+                animation-duration: 8s;
+            }
+        }
     }
 }
 
