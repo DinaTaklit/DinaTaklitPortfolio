@@ -12,7 +12,6 @@
                 position: relative;
                 width: 100%;
                 height: 320px;
-                background-image: url('./../assets/img/portfolio/oxbridge.png');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: top;
@@ -129,3 +128,42 @@
         transform: translateY(0);
     }
 }
+
+#portfolio{
+    .projects-wrapper{
+        /// All the projects
+        #project1{
+            background-image: url('./../assets/img/portfolio/oxbridge.png');
+        }
+        #project2{
+            background-image: url('./../assets/img/portfolio/agency.png');
+        }
+        #project3{
+            background-image: url('./../assets/img/portfolio/grid-flex-template.png');
+        }
+
+        #project4{
+            background-image: url('./../assets/img/portfolio/cv-template.png');
+        }
+
+        #project5{
+            background-image: url('./../assets/img/portfolio/landing-page.png');
+            &:hover{
+                animation-duration: 1s;
+            }
+        }
+        #project6{
+            background-image: url('./../assets/img/portfolio/my-first-portfolio.png');
+            &:hover{
+                animation-duration: 4s;
+            }
+        }
+        #project7{
+            background-image: url('./../assets/img/portfolio/storeTemplate.png');
+            &:hover{
+                animation-duration: 8s;
+            }
+        }
+    }
+}
+
