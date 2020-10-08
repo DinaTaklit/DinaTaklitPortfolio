@@ -1,5 +1,8 @@
 #portfolio{
     .projects-wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
         .card {
             border-radius: 10px;
             box-shadow: 0px 0px 20px #ccc;
@@ -39,6 +42,7 @@
                     }
                     i {
                         font-size: 1.3rem;
+                        animation: up 1s infinite;
                     }
                 }
                 .card-body {
@@ -113,3 +117,15 @@
     }
 }
 
+
+@keyframes up {
+    0% {
+       transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-.2rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
