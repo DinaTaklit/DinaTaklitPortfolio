@@ -27,7 +27,9 @@
     "gulp-livereload": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.4.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-webserver": "^0.9.1",
     "node-sass": "^4.14.1"
   },
   "dependencies": {
