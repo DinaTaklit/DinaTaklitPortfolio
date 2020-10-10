@@ -1,0 +1,85 @@
+#social-activities{
+    $offset: 50px;
+    background: #ffda61;
+
+    .solcial-activites-wrapper{
+        .outer{
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .static{
+                font-size: 2rem;
+            }
+            .dynmaic-container{
+                height: 100%;
+                perspective: 500px;
+                position: relative;
+                perspective-origin: 50% 50%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                .inner{
+                    transform: translateZ(-$offset);
+                    transform-style: preserve-3d;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .activity-dynamic-item{
+                        position: absolute;
+                        animation-duration: 2.5s;
+                        animation-fill-mode: backwards;
+                        animation-timing-function: ease;
+                        z-index: 100;
+                        backface-visibility: hidden;
+                        font-size: 3.5rem;
+                        font-weight: 600;
+                        white-space: nowrap;
+                        visibility: hidden;
+                        border-bottom: 2px solid $black;
+                        border-top: 2px solid $black;
+                        transform-style: preserve-3d;
+                    }
+                    .animate{
+                        visibility: visible;
+                        animation-name: animate;
+                    }
+                    @keyframes animate{
+                        0%{
+                            transform: rotateX(-90deg)translateZ($offset);
+                        }
+                        6%{transform: rotateX(10deg)translateZ($offset);}
+                        12%{transform: rotateX(-5deg)translateZ($offset);}
+                        18%{transform: rotateX(1.5deg)translateZ($offset);}
+                        24%{transform: rotateX(0deg)translateZ($offset);}
+
+
+                        82%{transform: rotateX(0deg)translateZ($offset);}
+                        88%{transform: rotateX(5deg)translateZ($offset);}
+                        94%{transform: rotateX(-10deg)translateZ($offset);}
+                        100%{
+                            transform: rotateX(90deg)translateZ($offset);
+                        }
+                    }
+                }
+            }
+        }
+        .organization-logos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            img{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                // border: 5px solid $primary;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
