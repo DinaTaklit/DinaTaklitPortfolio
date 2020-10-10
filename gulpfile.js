@@ -4,10 +4,11 @@ const prefix = require('gulp-autoprefixer'); // to add css prefixes
 const sass = require('gulp-sass'); // to manipulate sass file
 const livereload = require('gulp-livereload'); // to make live reload
 const sourcemaps = require('gulp-sourcemaps'); // to create a map
-const uglify = require('gulp-uglify'); // to minify js scripts
+const uglify = require('gulp-uglify'); // to minify js scripts does not support ecma script so I replace it with terser
 const webserver = require('gulp-webserver'); // to start a server
 var debug = require("gulp-debug"); // for debugging
 const del = require("del"); // to delete files and folders
+const terser = require('gulp-terser');
 
 // html task
 function html(){
@@ -35,7 +36,8 @@ function css(){
 function js(){
     return gulp.src('src/public/js/*.js')
            .pipe(concat('main.js'))
-           .pipe(uglify())
+           //.pipe(uglify())
+           .pipe(terser())
            .pipe(gulp.dest('dist/public/js'))
            .pipe(livereload());
 }
