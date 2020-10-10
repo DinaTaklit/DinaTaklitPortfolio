@@ -5,8 +5,3 @@ $(function () {
       $(".pCard_add i").toggleClass("fa-minus");
     });
   });
-
-
-
-
-
