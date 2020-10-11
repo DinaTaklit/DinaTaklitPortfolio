@@ -3,82 +3,158 @@
     background: #ffda61;
 
     .solcial-activites-wrapper{
-        .outer{
+        .organizations-wrapper{
             display: flex;
-            height: 100px;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            position: relative;
-            .static{
-                font-size: 2rem;
-            }
-            .dynmaic-container{
-                height: 100%;
-                perspective: 500px;
-                position: relative;
-                perspective-origin: 50% 50%;
-                display: inline-flex;
+            .outer{
+                display: flex;
+                height: 100px;
                 align-items: center;
                 justify-content: center;
-                width: 80%;
-                .inner{
-                    transform: translateZ(-$offset);
-                    transform-style: preserve-3d;
+                position: relative;
+                .static{
+                    font-size: 2rem;
+                }
+                .dynmaic-container{
                     height: 100%;
-                    width: 100%;
-                    display: flex;
+                    perspective: 500px;
+                    position: relative;
+                    perspective-origin: 50% 50%;
+                    display: inline-flex;
                     align-items: center;
                     justify-content: center;
-                    .activity-dynamic-item{
-                        position: absolute;
-                        animation-duration: 2.5s;
-                        animation-fill-mode: backwards;
-                        animation-timing-function: ease;
-                        z-index: 100;
-                        backface-visibility: hidden;
-                        font-size: 3.5rem;
-                        font-weight: 600;
-                        white-space: nowrap;
-                        visibility: hidden;
-                        border-bottom: 2px solid $black;
-                        border-top: 2px solid $black;
+                    width: 80%;
+                    .inner{
+                        transform: translateZ(-$offset);
                         transform-style: preserve-3d;
-                    }
-                    .animate{
-                        visibility: visible;
-                        animation-name: animate;
-                    }
-                    @keyframes animate{
-                        0%{
-                            transform: rotateX(-90deg)translateZ($offset);
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .activity-dynamic-item{
+                            position: absolute;
+                            animation-duration: 2.5s;
+                            animation-fill-mode: backwards;
+                            animation-timing-function: ease;
+                            z-index: 100;
+                            backface-visibility: hidden;
+                            font-size: 3.5rem;
+                            font-weight: 600;
+                            white-space: nowrap;
+                            visibility: hidden;
+                            border-bottom: 2px solid $black;
+                            border-top: 2px solid $black;
+                            transform-style: preserve-3d;
                         }
-                        6%{transform: rotateX(10deg)translateZ($offset);}
-                        12%{transform: rotateX(-5deg)translateZ($offset);}
-                        18%{transform: rotateX(1.5deg)translateZ($offset);}
-                        24%{transform: rotateX(0deg)translateZ($offset);}
+                        .animate{
+                            visibility: visible;
+                            animation-name: animate;
+                        }
+                        @keyframes animate{
+                            0%{
+                                transform: rotateX(-90deg)translateZ($offset);
+                            }
+                            6%{transform: rotateX(10deg)translateZ($offset);}
+                            12%{transform: rotateX(-5deg)translateZ($offset);}
+                            18%{transform: rotateX(1.5deg)translateZ($offset);}
+                            24%{transform: rotateX(0deg)translateZ($offset);}
 
 
-                        82%{transform: rotateX(0deg)translateZ($offset);}
-                        88%{transform: rotateX(5deg)translateZ($offset);}
-                        94%{transform: rotateX(-10deg)translateZ($offset);}
-                        100%{
-                            transform: rotateX(90deg)translateZ($offset);
+                            82%{transform: rotateX(0deg)translateZ($offset);}
+                            88%{transform: rotateX(5deg)translateZ($offset);}
+                            94%{transform: rotateX(-10deg)translateZ($offset);}
+                            100%{
+                                transform: rotateX(90deg)translateZ($offset);
+                            }
                         }
                     }
                 }
             }
+            .organization-logos{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 3rem;
+                img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    // border: 5px solid $primary;
+                    margin-right: 1rem;
+                }
+            }
         }
-        .organization-logos{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 3rem;
-            img{
-                width: 70px;
-                height: 70px;
-                border-radius: 50%;
-                // border: 5px solid $primary;
-                margin-right: 1rem;
+        .social-pics-wrapper{
+            .carousel {
+                position: relative;
+                .carousel-inner{
+                    .carousel-item{
+                        position: relative;
+                        img{
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                        .activity-text{
+                            width: 100%;
+                            position: absolute;
+                            bottom: 5rem;
+                            text-align: center;
+                            padding: .5rem 2rem;
+                            color: $white;
+                            background: rgba($color: $black, $alpha: .4);
+                            p{
+                                margin: 0;
+
+                            }
+                        }
+                    }
+                }
+              }
+
+            #carousel-thumbs {
+                background: rgba(255,255,255,.3);
+                bottom: 0;
+                left: 0;
+                padding: 0 4.2rem;
+                right: 0;
+                img {
+                    border: 5px solid transparent;
+                    cursor: pointer;
+                    &:hover{
+                        border-color: rgba(255,255,255,.3);
+                    }
+                }
+                .selected{
+                    img {
+                        border-color: $white;
+                    }
+                }
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                width: 50px;
+            }
+            @media all and (max-width: 767px) {
+                .carousel-container {
+                    #carousel-thumbs{
+                        img {
+                            border-width: 3px;
+                        }
+                    }
+                }
+            }
+            @media all and (min-width: 576px) {
+            .carousel-container #carousel-thumbs {
+                position: absolute;
+            }
+            }
+            @media all and (max-width: 576px) {
+                .carousel-container #carousel-thumbs {
+                    background: #ccccce;
+                }
             }
         }
     }
