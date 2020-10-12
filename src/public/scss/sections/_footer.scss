@@ -103,7 +103,6 @@
     }
 
     .footer-content {
-      position: relative;
         .footer-logo {
             margin-bottom: 30px;
             .heading{
@@ -149,6 +148,32 @@
                 }
             }
         }
+        .contact-social{
+            & > ul{
+                display: inline-flex;
+                li{
+                    a {
+                        border: 1px solid #8b9199;
+                        color: $gray-600;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 35px;
+                        width: 35px;
+                        margin: 0 .6rem;
+                        transition: all 0.4s ease 0s;
+                        i{
+                            font-size: 1.2rem;
+                        }
+                        &:hover {
+                            border: 1px solid $primary;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+
+        }
     }
 
     .copyright-area{
@@ -174,4 +199,7 @@
             }
         }
      }
+
+
+
 }
