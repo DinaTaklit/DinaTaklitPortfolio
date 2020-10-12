@@ -152,35 +152,27 @@
         }
     }
 
-
-
-
-
-
-
     .copyright-area{
-      background: #202020;
-      padding: 25px 0;
-    }
-    .copyright-text p {
-      margin: 0;
-      font-size: 14px;
-      color: #878787;
-    }
-    .copyright-text p a{
-      color: #ff5e14;
-    }
-    .footer-menu li {
-      display: inline-block;
-      margin-left: 20px;
-    }
-    .footer-menu li:hover a{
-      color: #ff5e14;
-    }
-    .footer-menu li a {
-      font-size: 14px;
-      color: #878787;
-    }
-
-
+        background: #202020;
+        padding: 2rem 0;
+        .copyright-text {
+            p{
+                margin: 0;
+                font-size: 1.2rem;
+            }
+        }
+        .footer-menu{
+            li {
+                display: inline-block;
+                margin-left: 1.8rem;
+                a {
+                    font-size: 1.2rem;
+                    color: $gray-600;
+                }
+                &:hover a{
+                    color: $primary-hover;
+                }
+            }
+        }
+     }
 }
