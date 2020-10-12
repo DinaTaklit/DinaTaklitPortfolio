@@ -1,6 +1,242 @@
-// Styling for the footer
-// .footer {
-//     text-align: center;
-//     font-size: 0.9rem;
-//     font-family: $headings-font-family;
-// }
+/**************** Footer *********/
+.footer-section{
+    background: #151414;
+    position: relative;
+
+    .footer-cta {
+        border-bottom: 1px solid #373636;
+        .grid-cta{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .single-cta{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+                color: $primary;
+                font-size: 2.5rem;
+            }
+            .cta-text {
+                padding-left: 1.2rem;
+                h2{
+                    color: $white;
+                    font-size: 1.5rem;
+                    margin-bottom: .2rem;
+                }
+                span {
+                    color: $gray-600;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .single-cta.logo-contact{
+            figure {
+                position: relative;
+                overflow: hidden;
+                width: 85px;
+                height: 85px;
+                background-color: black;
+                border-radius: 20%;
+                margin: -1.4rem 0 0;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .contact {
+                    a {
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 50%; height: 50%;
+                        transition: all .25s ease-in-out;
+                        i{
+                            color: $white;
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    .tw {
+                        top: 0;
+                        left: 0;
+                        background-color: rgba(0, 172, 238, .7);
+                        transform: translate(-100%, -100%);
+                        &:hover {
+                            background-color: rgba(0, 172, 238, 1);
+                        }
+                    }
+
+                    .fb {
+                        top: 0; right: 0;
+                        background-color: rgba(59, 89, 152, .7);
+                        transform: translate(100%, -100%);
+                        &:hover{
+                            background-color: rgba(59, 89, 152, 1);
+                        }
+                    }
+
+                    .gp {
+                    bottom: 0; left: 0;
+                    background-color: rgba(221, 75, 57, .7);
+                    transform: translate(-100%, 100%);
+                    &:hover{
+                        background-color: rgba(221, 75, 57, 1);
+
+                    }
+                    }
+
+                    .ma {
+                        bottom: 0; right: 0;
+                        background-color: rgba(153, 153, 153, .7);
+                        transform: translate(100%, 100%);
+                        &:hover{
+                            background-color: rgba(153, 153, 153, 1);
+                        }
+                    }
+
+                }
+                &:hover .contact a {
+                    transform: translate(0, 0);
+                }
+            }
+
+        }
+    }
+
+
+
+
+
+    .footer-content {
+      position: relative;
+      z-index: 2;
+    }
+    .footer-pattern img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 330px;
+      background-size: cover;
+      background-position: 100% 100%;
+    }
+    .footer-logo {
+      margin-bottom: 30px;
+    }
+    .footer-logo img {
+        max-width: 200px;
+    }
+    .footer-text p {
+      margin-bottom: 14px;
+      font-size: 14px;
+          color: #7e7e7e;
+      line-height: 28px;
+    }
+    .footer-social-icon span {
+      color: #fff;
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 20px;
+    }
+    .footer-social-icon a {
+      color: #fff;
+      font-size: 16px;
+      margin-right: 15px;
+    }
+    .footer-social-icon i {
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 38px;
+      border-radius: 50%;
+    }
+    .facebook-bg{
+      background: #3B5998;
+    }
+    .twitter-bg{
+      background: #55ACEE;
+    }
+    .google-bg{
+      background: #DD4B39;
+    }
+    .footer-widget-heading h3 {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .footer-widget-heading h3::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      height: 2px;
+      width: 50px;
+      background: #ff5e14;
+    }
+    .footer-widget ul li {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      margin-bottom: 12px;
+    }
+    .footer-widget ul li a:hover{
+      color: #ff5e14;
+    }
+    .footer-widget ul li a {
+      color: #878787;
+      text-transform: capitalize;
+    }
+    .subscribe-form {
+      position: relative;
+      overflow: hidden;
+    }
+    .subscribe-form input {
+      width: 100%;
+      padding: 14px 28px;
+      background: #2E2E2E;
+      border: 1px solid #2E2E2E;
+      color: #fff;
+    }
+    .subscribe-form button {
+        position: absolute;
+        right: 0;
+        background: #ff5e14;
+        padding: 13px 20px;
+        border: 1px solid #ff5e14;
+        top: 0;
+    }
+    .subscribe-form button i {
+      color: #fff;
+      font-size: 22px;
+      transform: rotate(-6deg);
+    }
+    .copyright-area{
+      background: #202020;
+      padding: 25px 0;
+    }
+    .copyright-text p {
+      margin: 0;
+      font-size: 14px;
+      color: #878787;
+    }
+    .copyright-text p a{
+      color: #ff5e14;
+    }
+    .footer-menu li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+    .footer-menu li:hover a{
+      color: #ff5e14;
+    }
+    .footer-menu li a {
+      font-size: 14px;
+      color: #878787;
+    }
+
+
+}
