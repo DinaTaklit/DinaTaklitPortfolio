@@ -36,47 +36,79 @@ video[poster] {
     .contents{
         padding: 10rem 2rem 0;
         .heading{
-            font-size: 8rem;
+            font-size: 6.5rem;
             letter-spacing: .4rem;
             text-transform: uppercase;
             font-weight: 700;
             color: $primary;
+            margin: 3rem 0;
         }
         .sub-heading{
-            font-size: 3rem;
+            font-size: 2rem;
         }
-        // .hero-btn{
-        //     margin: 2rem 0;
-        //     text-transform: capitalize;
-        //     color: #fff;
-        //     background-color: $primary;
-        //     box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
-        //     transition: all .2s ease-in-out;
-        //     &:hover{
-        //         background-color: darken($color: $primary, $amount: 10);
-        //     }
-        // }
-        .social-icon{
-            li{
+        .sub-heading-role{
+            font-weight: 400;
+            position: relative;
+            font-weight: 300;
+            font-size: 3.5em;
+            .text-wrapper{
+                position: relative;
                 display: inline-block;
-                a{
-                    color: $gray-800;
-                    background: $white;
-                    width: 3rem;
-                    height: 3rem;
-                    line-height: 38px;
-                    display: block;
-                    text-align: center;
-                    border-radius: 100%;
-                    font-size: 1.3rem;
-                    margin: 1.1rem .5rem 1rem .5rem;
-                    transition: all 0.3s ease-in-out 0s;
-                    &:hover{
-                        background-color: $primary;
-                        color: $white;
-                    }
+                padding-top: 0.1em;
+                padding-right: 0.05em;
+                padding-bottom: 0.15em;
+                line-height: 1em;
+                .line {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    height: 3px;
+                    width: 100%;
+                    background-color: rgba($color: $white, $alpha: 0.8);
+                    transform-origin: 0.5 0;
+                }
+                .ampersand {
+                    font-style: italic;
+                    font-weight: 400;
+                    width: 1em;
+                    margin-right: -0.1em;
+                    margin-left: -0.1em;
+                }
+                .letters {
+                    display: inline-block;
+                    opacity: 0;
                 }
             }
         }
+        .btn-get-started {
+
+            i{
+                margin-top: 5rem;
+                font-size: 2.5rem;
+                display: inline-block;
+                padding: 1rem 0;
+                border-radius: 50%;
+                animation: down 1s infinite;
+                width: 5rem;
+                height: 5rem;
+                border: 2px solid rgba($color: $white, $alpha: 0.8);
+                color: rgba($color: $white, $alpha: 0.8);
+            }
+        }
+    }
+}
+
+
+@keyframes down {
+    0% {
+       transform: translateY(0);
+    }
+    50% {
+        transform: translateY(.4rem);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
