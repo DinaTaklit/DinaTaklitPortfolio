@@ -2,9 +2,7 @@
     background: url('http://leta.artrow.net/images/background.jpg');
     color: $gray-700;
     .card{
-        background: none repeat scroll 0 0 #FFFFFF;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-        margin-bottom: 30px;
         padding: 1rem 2rem;
         position: relative;
         h2{
@@ -35,9 +33,14 @@
                 margin-bottom: 1rem;
             }
             p{
+                font-size: 1.2rem;
                 line-height: 1.9;
                 margin: 0;
+                display: flex;
                 span{
+                    display: inline-block;
+                    width: 4.4rem;
+                    margin-right: .5rem;
                     font-weight: 600;
                 }
             }
@@ -49,15 +52,16 @@
                 font-size: 1.1rem;
                 line-height: 1.67;
                 letter-spacing: 0.7px;
-                padding-left: 5%;
-                padding-right: 5%;
+                padding-left: 3%;
+                padding-right: 3%;
                 .line{
                     display: flex;
                     justify-content: flex-start;
                     align-items: flex-start;
+                    margin-bottom: .5rem;
                     .line-number {
                         margin-right: 1.5rem;
-                        opacity: 0.33;
+                        opacity: 0.4;
                         user-select: none;
                     }
                     .line-content{
@@ -73,13 +77,14 @@
                 .empty-line{
                     .line-number {
                         display: block;
+                        user-select: none;
                     }
                     .line-number-a {
-                        opacity: 0.15;
+                        opacity: 0.25;
                     }
 
                     .line-number-b {
-                        opacity: 0.1;
+                        opacity: 0.2;
                     }
                 }
 
