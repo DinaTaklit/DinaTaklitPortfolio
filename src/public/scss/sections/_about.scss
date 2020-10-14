@@ -5,11 +5,12 @@
         background: none repeat scroll 0 0 #FFFFFF;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
         margin-bottom: 30px;
-        padding: 15px 20px;
+        padding: 1rem 2rem;
         position: relative;
         h2{
             font-size: 2rem;
-            margin-bottom: 1.1rem;
+            margin-bottom: 1.4rem;
+            color: $primary;
         }
         .paper-clip {
             width: 60px;
@@ -31,6 +32,57 @@
             img{
                 width: 100%;
                 height: 200px;
+                margin-bottom: 1rem;
+            }
+            p{
+                line-height: 1.9;
+                margin: 0;
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .about{
+            // background: linear-gradient(to bottom, #252423, #252525);
+            .body-card-text{
+                font-size: 1.1rem;
+                line-height: 1.67;
+                letter-spacing: 0.7px;
+                padding-left: 5%;
+                padding-right: 5%;
+                .line{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    .line-number {
+                        margin-right: 1.5rem;
+                        opacity: 0.33;
+                        user-select: none;
+                    }
+                    .line-content{
+                        letter-spacing: 2px;
+                        opacity: 85%;
+                        mark{
+                            background: transparent;
+                            font-weight: 600;
+                            color: $primary-hover;
+                        }
+                    }
+                }
+                .empty-line{
+                    .line-number {
+                        display: block;
+                    }
+                    .line-number-a {
+                        opacity: 0.15;
+                    }
+
+                    .line-number-b {
+                        opacity: 0.1;
+                    }
+                }
+
             }
         }
 
