@@ -17,7 +17,7 @@ $(document).ready( function() {
 
 	//Ascending order
 	var responsiveIsotope = [
-		[480, 7],
+		[480, 3],
         [720, 10]
 	];
 
@@ -28,7 +28,10 @@ $(document).ready( function() {
 	var currentFilter = '*';
 	var filterAtribute = 'data-filter';
 	var pageAtribute = 'data-page';
-	var pagerClass = 'isotope-pager';
+    var pagerClass = 'isotope-pager';
+
+
+
 
 	function changeFilter(selector) {
 		$container.isotope({
@@ -47,11 +50,14 @@ $(document).ready( function() {
 	}
 
 	function defineItemsPerPage() {
-		var pages = itemsPerPageDefault;
+
+        var pages = itemsPerPageDefault;
+
 
 		for( var i = 0; i < responsiveIsotope.length; i++ ) {
 			if( $(window).width() <= responsiveIsotope[i][0] ) {
-				pages = responsiveIsotope[i][1];
+                pages = responsiveIsotope[i][1];
+                console.log('pages = '+ pages);
 				break;
 			}
 		}
