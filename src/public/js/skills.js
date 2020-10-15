@@ -9,7 +9,7 @@ var options = {
     try {
       TagCanvas.Start('skillCanvas', '', options);
     } catch(e) {
-      // something went wrong, hide the canvas container
+      // if something went wrong, hide the canvas container
       document.getElementById('skillCanvasContainer').style.display = 'none';
     }
   };

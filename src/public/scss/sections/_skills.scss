@@ -22,7 +22,6 @@
         text-align: center;
         .heading{
             font-size: 2rem;
-            margin-bottom: 2rem;
             color: $primary;
         }
         .soft-skills{
@@ -31,6 +30,7 @@
             align-items: center;
             .soft-skills-wrapper{
                 // transform: rotate(315deg);
+                margin-top: 4rem;
                 .h-boxes{
                     display: flex;
                     &:first-child{
@@ -93,6 +93,38 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+            }
+
+        }
+    }
+}
+
+
+@media (max-width:578px){
+    #skills{
+        .skillswrapper{
+            .soft-skills{
+                width: 90%;
+                margin: 0 auto 4rem;
+                .soft-skills-wrapper{
+                    .h-boxes{
+                        display: flex;
+                        .box{
+                            width: 75px;
+                            height: 75px;
+                            .box-text{
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .technical-skills{
+                #skillCanvasContainer {
+                    #skillCanvas {
+                    width: 100%;
+                    }
+                }
             }
 
         }
