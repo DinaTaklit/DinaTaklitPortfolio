@@ -1,12 +1,11 @@
 #pens{
-    color: #fdfdfd;
     min-height: 100vh;
-    background: $dark-gray;
+    color: $gray-700;
     position: relative;
     .section-header{
         span.link{
             a{
-                color: $white;
+                color: $gray-700;
                 &:hover{
                     color: $primary-hover;
                 }
@@ -46,8 +45,10 @@
         position: absolute;
         z-index: 1;
         left: 0;
+        height: 50px;
+        width: 100%;
         path {
-            fill: darken($primary, 30);
+            fill: $primary;
         }
     }
       .dividerTop {
@@ -60,7 +61,7 @@
       }
 }
 
-@media (max-width: 500px){
+@media (max-width: 550px){
     #pens{
         .pens-wrapper {
 
