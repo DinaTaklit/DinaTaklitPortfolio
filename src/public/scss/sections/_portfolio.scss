@@ -70,6 +70,10 @@
                         .card-body-desc{
                             font-size: 1.1rem;
                             color: $gray-700;
+                            a{
+                                color: $gray-700;
+                                text-decoration: underline;
+                            }
                         }
                         .card-body-keys{
                             font-size: .95rem;
