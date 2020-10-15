@@ -1,22 +1,24 @@
 #social-activities{
     $offset: 50px;
-    background: #ffda61;
-
     .solcial-activites-wrapper{
         .organizations-wrapper{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             .outer{
                 display: flex;
+                flex-direction: column;
                 height: 100px;
                 align-items: center;
                 justify-content: center;
                 position: relative;
                 .static{
-                    font-size: 2rem;
+                    font-size: 1.7rem;
+                    font-weight: 600;
                 }
                 .dynmaic-container{
+                    margin: 3rem 0;
                     height: 100%;
                     perspective: 500px;
                     position: relative;
@@ -24,7 +26,6 @@
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
-                    width: 80%;
                     .inner{
                         transform: translateZ(-$offset);
                         transform-style: preserve-3d;
@@ -34,18 +35,19 @@
                         align-items: center;
                         justify-content: center;
                         .activity-dynamic-item{
+                            color: $primary;
                             position: absolute;
                             animation-duration: 2.5s;
                             animation-fill-mode: backwards;
                             animation-timing-function: ease;
                             z-index: 100;
                             backface-visibility: hidden;
-                            font-size: 3.5rem;
+                            font-size: 3rem;
                             font-weight: 600;
                             white-space: nowrap;
                             visibility: hidden;
-                            border-bottom: 2px solid $black;
-                            border-top: 2px solid $black;
+                            border-bottom: 2px solid $primary;
+                            border-top: 2px solid $primary;
                             transform-style: preserve-3d;
                         }
                         .animate{
@@ -76,7 +78,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 3rem;
+                margin-top: 4.5rem;
                 img{
                     width: 70px;
                     height: 70px;
@@ -89,6 +91,7 @@
         .social-pics-wrapper{
             .carousel {
                 position: relative;
+
                 .carousel-inner{
                     .carousel-item{
                         position: relative;
@@ -154,7 +157,107 @@
             @media all and (max-width: 576px) {
                 .carousel-container #carousel-thumbs {
                     background: #ccccce;
+                    padding: 0 1rem;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width:998px){
+    #social-activities{
+        $offset: 50px;
+        .solcial-activites-wrapper{
+            .organizations-wrapper{
+                .outer{
+                    .static{
+                        font-size: 1.4rem;
+                    }
+                    .dynmaic-container{
+                        margin: 1.5rem 0 2.5rem;
+                        .inner{
+                            .activity-dynamic-item{
+                                font-size: 2.5rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                .organization-logos{
+                    margin-top: 2.5rem;
+                    img{
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:778px){
+    #social-activities{
+        $offset: 50px;
+        .solcial-activites-wrapper{
+            .organizations-wrapper{
+                .outer{
+                    .static{
+                        font-size: 1.8rem;
+                    }
+                    .dynmaic-container{
+                        margin: 1.5rem 0 2.5rem;
+                        .inner{
+                            .activity-dynamic-item{
+                                font-size: 3rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                .organization-logos{
+                    margin-top: 2.5rem;
+                    margin-bottom: 4rem;
+                    img{
+                        width: 55px;
+                        height: 55px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:578px){
+    #social-activities{
+        $offset: 50px;
+        .solcial-activites-wrapper{
+            .organizations-wrapper{
+                .outer{
+                    .static{
+                        font-size: 1.5rem;
+                    }
+                    .dynmaic-container{
+                        margin: 1.5rem 0 2.5rem;
+                        .inner{
+                            .activity-dynamic-item{
+                                font-size: 2.5rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                .organization-logos{
+                    margin-top: 2.5rem;
+                    margin-bottom: 4rem;
+                    img{
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+            .social-pics-wrapper{
+                padding: 0 3rem;
             }
         }
     }
