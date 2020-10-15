@@ -3,6 +3,7 @@
 
 var options = {
   textColour: '#2c3e50',
+  outlineColour = 'transparent',
   textHeight: 20,
   depth: 1
  };
@@ -10,10 +11,8 @@ var options = {
 window.onload = function() {
   try {
     TagCanvas.Start('skillCanvas', '', options);
-    console.log("Start skill animation");
   } catch(e) {
     // something went wrong, hide the canvas container
-    console.log("Hide canvas")
     document.getElementById('skillCanvasContainer').style.display = 'none';
   }
 };

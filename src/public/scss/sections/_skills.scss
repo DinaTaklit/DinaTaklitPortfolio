@@ -1,22 +1,36 @@
 #skills{
     // background: #3498db;
+    background: url('./../assets/img/skills.jpg') center top no-repeat fixed;
+    color: $gray-700;
+    background-size: cover;
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.94);
+        z-index: 1;
+    }
+    .container{
+        position: relative;
+        z-index: 2;
+    }
     .skillswrapper{
         text-align: center;
         .heading{
             font-size: 2rem;
             margin-bottom: 2rem;
-        }
-        .technical-skills{
-            #skillCanvasContainer {
-                display:flex;
-                #skillCanvas {
-                margin: auto;
-                }
-            }
+            color: $primary;
         }
         .soft-skills{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .soft-skills-wrapper{
-                transform: rotate(315deg);
+                // transform: rotate(315deg);
                 .h-boxes{
                     display: flex;
                     &:first-child{
@@ -34,8 +48,8 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: 90px;
-                        height: 90px;
+                        width: 85px;
+                        height: 85px;
                         background-color: #dedede;
                         margin-right: 4px;
                         margin-bottom: 4px;
@@ -51,24 +65,36 @@
                         .box-text{
                             font-size: 1.1rem;
                             font-weight: 600;
-                            // padding-bottom: .3rem;
-                            // border-bottom: 1px solid rgba(0,0,0,.8);
-                            // &:after {
-                            //     position: absolute;
-                            //     bottom: 0;
-                            //     right: 45%;
-                            //     content:' ';
-                            //     width: 0;
-                            //     height: 0;
-                            //     border-left: 5px solid transparent;
-                            //     border-right: 5px solid transparent;
-                            //     border-bottom: 5px solid black;
-                            //   }
                         }
                     }
                 }
             }
         }
+        .technical-skills{
+            #skillCanvasContainer {
+                display:flex;
+                #skillCanvas {
+                margin: auto;
+                }
+            }
+        }
 
+
+    }
+}
+
+@media (max-width:998px){
+    #skills{
+        .skillswrapper{
+            .soft-skills{
+                margin-bottom: 4rem;
+            }
+            .technical-skills{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        }
     }
 }
