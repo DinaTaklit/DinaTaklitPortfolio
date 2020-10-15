@@ -6,7 +6,7 @@
         .card {
             border-radius: 10px;
             box-shadow: 0px 0px 20px #ccc;
-            width: 300px;
+            width: 100%;
             overflow: hidden;
             .card-header {
                 position: relative;
@@ -81,11 +81,15 @@
                         }
                         .card-body-action{
                             display: flex;
-                            justify-content: space-between;
+                            justify-content: center;
                             .btn{
                                 padding: .4rem .7rem;
                                 font-size: 1.1rem;
                                 font-weight: 700;
+                                margin-right: .5rem;
+                                &:last-child{
+                                    margin-right: none;
+                                }
                                 i{
                                     font-size: 1.1rem;
                                     margin-right: .3rem;
@@ -103,6 +107,58 @@
     }
 }
 
+@media (max-width: 1324px){
+    #portfolio{
+        .projects-wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+    }
+}
+
+@media (max-width: 998px){
+    #portfolio{
+        .projects-wrapper{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+    }
+}
+
+@media (max-width: 778px){
+    #portfolio{
+        .projects-wrapper{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            .card{
+                .card-bottom {
+                    .read-more{
+                        p{
+                            font-size: 1.15rem;
+                        }
+                        i {
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 528px){
+    #portfolio{
+        .projects-wrapper{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+        }
+    }
+}
+
 
 @keyframes autoscroll {
     0% {
@@ -115,7 +171,6 @@
       background-position: 50% 0%;
     }
 }
-
 
 @keyframes up {
     0% {
