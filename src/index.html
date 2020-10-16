@@ -57,46 +57,41 @@
                     </li>
                   </ul>
                 </div>
-
-
             </div>
         </nav>
         <!-- /Navbar -->
 
-      <!-- Hero -->
+        <!-- Hero -->
+        <div id="hero" class="hero-bg page-section">
+            <video loop muted autoplay poster="public/assets/img/hero-area.jpg" class="background-video">
+                <source src="public/assets/vid/hero.mp4" type="video/mp4">
+            </video>
+            <div class="background-video-content">
+                <div class="overlay"></div>
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center">
+                    <div class="contents">
+                        <p class="sub-heading wow fadeInUp" data-wow-delay="0.2s">Welcome, This is</p>
+                        <h1 class="heading script-font  wow fadeInUp" data-wow-delay="0.4s"> Dina TAKLIT </h1>
+                        <h2 class="sub-heading sub-heading-role">
+                            <span class="text-wrapper">
+                                <span class="line line1"></span>
+                                <span class="letters letters-left">Software Engineer</span>
+                                <span class="letters ampersand">&amp;</span>
+                                <span class="letters letters-right"> Web Developer</span>
+                                <span class="line line2"></span>
+                            </span>
+                        </h2>
+                        <a href="#about" class="btn-get-started scrollto smooth-scroll js-scroll-trigger "><i class="fas fa-angle-double-down"></i></a>
 
-      <div id="hero" class="hero-bg page-section">
-        <video loop muted autoplay poster="public/assets/img/hero-area.jpg" class="background-video">
-            <source src="public/assets/vid/hero.mp4" type="video/mp4">
-        </video>
-        <div class="background-video-content">
-            <div class="overlay"></div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
-                  <div class="contents">
-                    <p class="sub-heading wow fadeInUp" data-wow-delay="0.2s">Welcome, This is</p>
-                    <h1 class="heading script-font  wow fadeInUp" data-wow-delay="0.4s"> Dina TAKLIT </h1>
-                    <h2 class="sub-heading sub-heading-role">
-                        <span class="text-wrapper">
-                            <span class="line line1"></span>
-                            <span class="letters letters-left">Software Engineer</span>
-                            <span class="letters ampersand">&amp;</span>
-                            <span class="letters letters-right"> Web Developer</span>
-                            <span class="line line2"></span>
-                        </span>
-                    </h2>
-                    <a href="#about" class="btn-get-started scrollto smooth-scroll js-scroll-trigger "><i class="fas fa-angle-double-down"></i></a>
-
+                        </div>
                     </div>
-                  </div>
+                    </div>
                 </div>
-              </div>
-            </div>
+                </div>
         </div>
-      </div>
-      <!-- /Hero -->
-
+        <!-- /Hero -->
     </header>
     <!-- /Header-->
 
@@ -189,8 +184,6 @@
         </div>
     </section>
     <!-- /About Section -->
-
-
 
     <!-- Career Section -->
     <section id="career" class="section-bg page-section">
@@ -294,7 +287,6 @@
         </div>
     </section>
     <!-- /Career Section -->
-
 
     <!-- Skills  -->
     <section id="skills" class="section-bg page-section">
@@ -1104,8 +1096,6 @@
     </section>
     <!-- /Social Activities -->
 
-
-
     <!-- Footer  -->
     <footer id="contact" class="footer-section">
         <div class="container">
@@ -1218,9 +1208,6 @@
             </div>
         </div>
     </footer>
-
-
-
     <!-- /Footer -->
 
 
@@ -1245,17 +1232,5 @@
     <!-- Custom Js -->
     <script src="public/js/main.js"></script>
 
-
-    <script>
-        $(document).ready(function(){
-            $('input[type="radio"]').click(function(){
-                var inputValue = $(this).attr("value");
-                var targetBox = $("." + inputValue);
-                $("#about .content p").not(targetBox).hide();
-                $(targetBox).show();
-            });
-        });
-
-    </script>
   </body>
 </html>
