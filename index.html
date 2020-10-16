@@ -9,21 +9,27 @@
     <link rel="stylesheet" href="public/vendor/bootstrap/bootstrap.min.css">
 
     <!-- Font awesome -->
-        <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="public/vendor/fonts/css/font-awesome.all.min.css">
+
+    <!-- Magnific-popup  -->
+    <!-- Lightbox and modal dialog plugin. Can display inline HTML, iframes (YouTube video, Vimeo, Google Maps), or an image gallery. Animation effects are added with CSS3 transitions. For jQuery or Zepto. -->
+    <link rel="stylesheet" href="public/vendor/magnific-popup/1.1.0/magnific-popup.min.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet"  href="public/vendor/animate.css/4.1.1/animate.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="public/css/main.css">
 
     <title>Dina TAKLIT Portfolio</title>
   </head>
-  <body>
+  <body id="top">
     <!-- Header -->
     <header id="header-wrap">
         <!-- Navbar-->
         <nav id="main-nav" class="navbar navbar-expand-md navbar-light fixed-top bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#top">
                     <div class="brand-div">
                         <img class="brand-img rounded-circle img-fluid" src="public/assets/img/logo.jpg" width="50" height="50" alt="" loading="lazy">
                         <span class="brand-name">Dina</span>
@@ -35,123 +41,1174 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                      <a class="nav-link active" href="#"> About <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#about"> About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Portfolio</a>
+                      <a class="nav-link" href="#career">Career</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resume</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                   </ul>
                 </div>
-
-
             </div>
-          </nav>
+        </nav>
         <!-- /Navbar -->
 
-      <!-- Hero -->
+        <!-- Hero -->
+        <div id="hero" class="hero-bg page-section">
+            <video loop muted autoplay poster="public/assets/img/hero-area.jpg" class="background-video">
+                <source src="public/assets/vid/hero.mp4" type="video/mp4">
+            </video>
+            <div class="background-video-content">
+                <div class="overlay"></div>
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center">
+                    <div class="contents">
+                        <p class="sub-heading wow fadeInUp" data-wow-delay="0.2s">Welcome, This is</p>
+                        <h1 class="heading script-font  wow fadeInUp" data-wow-delay="0.4s"> Dina TAKLIT </h1>
+                        <h2 class="sub-heading sub-heading-role">
+                            <span class="text-wrapper">
+                                <span class="line line1"></span>
+                                <span class="letters letters-left">Software Engineer</span>
+                                <span class="letters ampersand">&amp;</span>
+                                <span class="letters letters-right"> Web Developer</span>
+                                <span class="line line2"></span>
+                            </span>
+                        </h2>
+                        <a href="#about" class="btn-get-started scrollto smooth-scroll js-scroll-trigger "><i class="fas fa-angle-double-down"></i></a>
 
-      <div id="hero" class="hero-bg page-section">
-        <video loop muted autoplay poster="public/assets/img/hero-area.jpg" class="background-video">
-            <source src="public/assets/vid/hero.mp4" type="video/mp4">
-        </video>
-        <div class="background-video-content">
-            <div class="overlay"></div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
-                  <div class="contents">
-                    <h5 class="sub-heading script-font wow fadeInUp" data-wow-delay="0.2s">Welcome, This is</h5>
-                    <h2 class="heading wow fadeInUp" data-wow-delay="0.4s">Dina TAKLIT</h2>
-                    <p class="sub-heading script-font wow fadeInUp" data-wow-delay="0.6s">Software Engineer and Web Developer</p>
-                    <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
-                        <li>
-                            <a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li>
-                          <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a class="facebook" href="#"><i class="fab fa-github-alt"></i></a>
-                        </li>
-                        <li>
-                            <a class="facebook" href="#"><i class="fab fa-stack-overflow"></i></a>
-                        </li>
-                        <li>
-                            <a class="facebook" href="#"><i class="fab fa-codepen"></i></a>
-                        </li>
-                    </ul>
-                    <div class="wow fadeInUp" data-wow-delay="1s">
-                      <a href="#" class="btn btn-common">My Portfolio</a>
-                      <a href="#" class="btn btn-common">Hire Me!</a>
+                        </div>
                     </div>
-                  </div>
+                    </div>
                 </div>
-              </div>
-            </div>
+                </div>
         </div>
-      </div>
-      <!-- /Hero -->
-
+        <!-- /Hero -->
     </header>
     <!-- /Header-->
 
-    <!-- Contact  -->
-    <section id="contact" class="page-section">
+    <!-- About Section -->
+    <section id="about" class="section-bg page-section">
         <div class="container">
-          <div class="row justify-content-center">
+            <div class="section-header row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">About</h2>
+                        <!-- <p class="wow fadeInDown" data-wow-delay="0.2s">Here we go</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="profile-about-wrapper">
+                <div class="profile-about row">
+                    <div class="profile-wrapper col-lg-4 col-md-12">
+                        <div class="profile card">
+                            <div class="paper-clip"></div>
+                            <h2>My profile</h2>
+                            <img class="image-fluid" src="public/assets/img/dina.jpg" alt="">
+                            <div class="body-text">
+                                <p> <span>Name:</span> Dina Taklit </p>
+                                <p> <span>Born:</span> 06 Decemeber 1995 </p>
+                                <p> <span>Degree:</span> Computer Science and software engineer </p>
+                                <p> <span>Email:</span> <a href="mailto:ez_taklit@esi.dz">ez_taklit@esi.dz</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-wrapper col-lg-8 col-md-12">
+                        <div class="about card">
+                            <div class="paper-clip"></div>
+                            <h2>About me</h2>
+                            <div class="body-card-text">
+                                <div class="line">
+                                    <span class="line-number">1</span>
+                                    <span class="line-content">Hello, I am </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number">2</span>
+                                    <span class="line-content"> <mark>Software Engineer</mark> & <mark>web developer</mark>.</span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number">3</span>
+                                    <span class="line-content">
+                                        Currently working as <mark>front end web developer</mark> which is where my passion for development and design converge.
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number">4</span>
+                                    <span class="line-content">
+                                        There’s nothing I enjoy more than <mark>coding</mark>, <mark>searching</mark>, <mark>solving errors</mark>.
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number">5</span>
+                                    <span class="line-content">
+                                        I'm <mark>positive</mark> person, naturally <mark>curious</mark>, and <mark>hardly working</mark> to improve my soft and technical skills.
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number">6</span>
+                                    <span class="line-content">
+                                        I’ve spent many times trying to <mark>perfec</mark>t what I do and while I’ll never be perfect, I <mark>do my best</mark> to come close.
+                                    </span>
+                                </div>
+                                <div class="line">
+                                    <span class="line-number">7</span>
+                                    <span class="line-content">
+                                        In addition to my coding life, I spend time <mark>cooking</mark> and doing <mark>house working</mark>, <mark>organizing events</mark>, <mark>managing </mark>fb pages and groups, discovering new <mark>cultures</mark> and <mark>languges</mark>, <mark>reading</mark> books, <mark>singing</mark> at Sumle, <mark>hand crafiting</mark> or <mark>drawing</mark> and sometimes <mark>writing</mark> stories and poem.
+                                    </span>
+                                </div>
+
+                                <div class="line">
+                                    <span class="line-number">8</span>
+                                    <span class="line-content">
+                                        Got any questions? <a href="mailto:ez_taklit@esi.dz">Contact me</a>.
+                                    </span>
+                                </div>
+
+                                <div class="empty-line">
+                                    <div class="line-number line-number-a">9</div>
+                                    <div class="line-number line-number-b">10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /About Section -->
+
+    <!-- Career Section -->
+    <section id="career" class="section-bg page-section">
+        <div class="container">
+            <div class="section-header row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Career</h2>
+                        <!-- <p class="wow fadeInDown" data-wow-delay="0.2s">Here we go</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="edu-wrapper row">
+                <div class="edu-wrapper col-lg-4 col-md-12">
+                    <div class="edu-card card">
+                        <h2>Education</h2>
+                        <div class="edu-content">
+                            <ul class="timeline">
+                              <li class="event">
+                                <div class="event-headline">
+                                    <h3 class="event-title">Ecole nationale Superieure d'Informatique (ESI)</h3>
+                                    <p class="event-sub-title">Engineer's degreeField Of StudyComputer Science and Software engineeringGradeEngineer</p>
+                                    <p class="event-when"> 2014-2019</p>
+
+                                </div>
+                              </li>
+                              <li class="event">
+                                <div class="event-headline">
+                                    <h3 class="event-title">Udacity</h3>
+                                    <p class="event-sub-title">Data Science, Artificial Inteligence, Full stack Developement</p>
+                                    <p class="event-when"> 2019-2020</p>
+
+                                </div>
+                              </li>
+                              <li class="event">
+                                <div class="event-headline">
+                                    <h3 class="event-title">Edyoda Digital University</h3>
+                                    <p class="event-sub-title">Front End Web development - Trainee - Infromation Technology</p>
+                                    <p class="event-when"> 2019-Present</p>
+
+                                </div>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-wrapper col-lg-8 col-md-12">
+                    <div class="exp-card card">
+                        <h2>Experience</h2>
+                        <div class="edu-content">
+                            <ul class="timeline">
+                              <li class="event">
+                                <div class="event-headline">
+                                    <h3 class="event-title">Web Developent Internship</h3>
+                                    <p class="event-sub-title">ATM Mobilis, Alger, Algeria</p>
+                                    <p class="event-when"> Jul 2017 - Aug 2017, 2mos</p>
+                                </div>
+                                <div class="event-body">
+                                    <p>Develop web application for Recovery and pointing management system</p>
+                                    <p><span>Key words:</span> Laravel, web application, framework, modelization, authentification, authorization, access management, real-time notifaction, dahsbord</p>
+                                </div>
+                              </li>
+                              <li class="event">
+                                <div class="event-headline">
+                                    <h3 class="event-title">Graduation Internship</h3>
+                                    <p class="event-sub-title">LMC-ESI-Alger - CSAIL-MIT-USA</p>
+                                    <p class="event-when"> Aug 2018 - Jul 2019, 1yr</p>
+                                </div>
+                                <div class="event-body">
+                                    <p> <a href="https://www.researchgate.net/publication/337155396_Using_Deep_Neural_Networks_for_Estimating_Loop_Unrolling_Factor" target="_blank">Propose a model to predict loop unrolling factor in Tiramisu compiler</a>.</p>
+                                    <p><span>Key words:</span> Loop Unrolling, Optimization, Tiramisu Compiler, Domaine Specific Language,Model, Deep Neural Network, Machine Learning, Deep learning, Research</p>
+                                </div>
+                              </li>
+                              <li class="event">
+                                <div class="event-headline">
+                                    <h3 class="event-title">Web Developer</h3>
+                                    <p class="event-sub-title">Self Employed</p>
+                                    <p class="event-when"> Nov 2019 - Present, 1yr</p>
+                                </div>
+                                <div class="event-body">
+                                    <p> Devloper web apps, landing pages and wordpress websites</p>
+                                    <p><span>Key words:</span> Landing pages, Static pages, web apps, Wordpress</p>
+                                </div>
+                              </li>
+                              <li class="event">
+                                <div class="event-headline">
+                                    <h3 class="event-title">Volunteer Tutor for Full Stack track</h3>
+                                    <p class="event-sub-title">One Million Arab Coders, Online</p>
+                                    <p class="event-when"> Aug 2020 - Present, 3mos</p>
+                                </div>
+                                <div class="event-body">
+                                    <p> Volunteer "Tutor" for the Full Stack track in >One Million Arab Coders initiative. The aim is to make an impact and transform lives by supporting thousands of students through the 1MAC community to achieve their dreams by learning technology.</p>
+                                    <p><span>Key words:</span> Web Developement, Full stack web developement, tutor, teaching</p>
+                                </div>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Career Section -->
+
+    <!-- Skills  -->
+    <section id="skills" class="section-bg page-section">
+        <div class="container">
+            <div class="section-header row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">My Skills</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="skillswrapper row">
+                <div class="col-lg-6  soft-skills">
+                    <h3 class="heading script-font">Soft Skill</h3>
+                    <div class="soft-skills-wrapper">
+                        <div class="h-boxes">
+                            <div class="box">
+                                <span><i class="fas fa-comments"></i></span>
+                            </div>
+                            <div class="box">
+                                <span class="box-text">Communication</span>
+                            </div>
+                            <div class="box">
+                                <span class="box-text">Team Work</span>
+                            </div>
+                            <div class="box">
+                                <span class="box-text">Motivation</span>
+                            </div>
+                        </div>
+                        <div class="h-boxes second">
+                            <div class="box">
+                                <span class="box-text">Responsability</span>
+                            </div>
+                            <div class="box">
+                                <span class="box-text">Creativity</span>
+                            </div>
+                            <div class="box">
+                                <span class="box-text">Friendly Personality</span>
+                            </div>
+                        </div>
+                        <div class="h-boxes third">
+                            <div class="box">
+                                <span class="box-text">Analytical Thinking</span>
+                            </div>
+                            <div class="box">
+                                <span class="box-text">Organization</span>
+                            </div>
+                        </div>
+                        <div class="h-boxes fouth">
+                            <div class="box">
+                                <span class="box-text">Self Determined</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 technical-skills">
+                    <h3 class="heading script-font">Technical Skill</h3>
+                    <div id="skillCanvasContainer">
+                     <canvas width="500" height="500" id="skillCanvas">
+                      <ul>
+                        <li><a href="">C</a></li>
+                        <li><a href="">Java</a></li>
+                        <li><a href="">Gulp Js</a></li>
+                        <li><a href="">Kanban</a></li>
+                        <li><a href="">Flask</a></li>
+                        <li><a href="">Rest</a></li>
+                        <li><a href="">API</a></li>
+                        <li><a href="">Android</a></li>
+                        <li><a href="">Kotlin</a></li>
+                        <li><a href="">Arduino</li>
+                        <li><a href="">Tiramisu</li>
+                        <li><a href="">Git</li>
+                        <li><a href="">Pytorch</li>
+                        <li><a href="">HTML</a></li>
+                        <li><a href="">HTML5</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">CSS3</a></li>
+                        <li><a href="">Bootstrap</a></li>
+                        <li><a href="">Bootstrap 4</a></li>
+                        <li><a href="">Sass</a></li>
+                        <li><a href="">Less</a></li>
+                        <li><a href="">Java Script</a></li>
+                        <li><a href="">JQuery</a></li>
+                        <li><a href="">Ajax</li>
+                        <li><a href="">HTTP</a></li>
+                        <li><a href="">ES6</a></li>
+                        <li><a href="">Json</a></li>
+                        <li><a href="">React Js</a></li>
+                        <li><a href="">Python</a></li>
+                        <li><a href="">Keras</li>
+                        <li><a href="">SQL</a></li>
+                        <li><a href="">Mysql</a></li>
+                        <li><a href="">Postgres SQL</a></li>
+                        <li><a href="">PHP</a></li>
+                        <li><a href="">linux</a></li>
+                        <li><a href="">Windows</a></li>
+                        <li><a href="">Micrososft Office</a></li>
+                        <li><a href="">HTTP</a></li>
+                      </ul>
+                     </canvas>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- /Skills -->
+
+    <!-- Learn  -->
+    <section id="learn" class="section-bg page-section">
+        <div class="container">
+
+          <div class="section-header row justify-content-center">
             <div class="col-12">
-              <div class="section-title-header text-center">
-                <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Contact Me</h2>
-                <p class="wow fadeInDown" data-wow-delay="0.2s">Hire me or drop any question :D </p>
+                <div class="section-title-header text-center">
+                  <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Where Do I Learn?</h2>
+                  <p class="wow fadeInDown" data-wow-delay="0.2s">I learn from those reouces and every other good resources </p>
+                </div>
+              </div>
+          </div>
+
+          <div class="learn-grid wow fadeInUp">
+
+            <div class="learn-card">
+              <div class="learn-logo">
+                <img src="public/assets/img/learn/udacity.png" class="img-fluid" alt="">
+              </div>
+              <div>
+                <a class="learn-link btn btn-large btn-common" href="">  Udacity <i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
-            <div class="col-lg-7 col-md-12 col-xs-12">
-              <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
-                <div class="form-wrapper">
-                  <form role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
-                    <div class="row">
-                      <div class="col-md-6 form-line">
-                        <div class="form-group">
-                          <input type="text" class="form-control" id="name" name="email" placeholder="First Name" required data-error="Please enter your name">
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-6 form-line">
-                        <div class="form-group">
-                          <input type="email" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-12 form-line">
-                        <div class="form-group">
-                          <input type="text" class="form-control" id="msg_subject" name="subject" placeholder="Subject" required data-error="Please enter your message subject">
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <textarea class="form-control" rows="4" id="message" name="message" placeholder="Say something :D" required data-error="Write your message"></textarea>
-                        </div>
-                        <div class="form-submit">
-                          <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Me Now</button>
-                          <div id="msgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+
+            <div class="learn-card">
+              <div class="learn-logo">
+                <img src="public/assets/img/learn/udemy.png" class="img-fluid" alt="">
+              </div>
+              <div>
+                <a class="learn-link btn btn-large btn-common" href="">  Udemy <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="learn-card">
+              <div class="learn-logo">
+                <img src="public/assets/img/learn/front-end-master.png" class="img-fluid" alt="">
+              </div>
+              <div>
+                <a class="learn-link btn btn-large btn-common" href=""> Front End Master<i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="learn-card">
+              <div class="learn-logo">
+                <img src="public/assets/img/learn/pluralsight.jpg" class="img-fluid" alt="">
+              </div>
+              <div>
+                <a class="learn-link btn btn-large btn-common" href=""> pluralsight<i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="learn-card">
+              <div class="learn-logo">
+                <img src="public/assets/img/learn/edyoda.jpg" class="img-fluid" alt="">
+              </div>
+              <div>
+                <a class="learn-link btn btn-large btn-common" href="">  Edyoda <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="learn-card">
+              <div class="learn-logo">
+                <img src="public/assets/img/learn/elzero.jpg" class="img-fluid" alt="">
+              </div>
+              <div>
+                <a class="learn-link btn btn-large btn-common" href=""> Elzero Web School <i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+
+            <div class="learn-card">
+                <div class="learn-logo">
+                  <img src="public/assets/img/learn/freecodecamp.png" class="img-fluid" alt="">
                 </div>
+                <div>
+                    <a class="learn-link btn btn-large btn-common" href="">  Free Code Camp <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="learn-card">
+              <div class="learn-logo">
+                <img src="public/assets/img/learn/stack.png" class="img-fluid" alt="">
+              </div>
+              <div>
+                <a class="learn-link btn btn-large btn-common" href="">  Stack Overflow <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            </div>
+
+            <div class="learn-card">
+              <div class="learn-logo">
+                <img src="public/assets/img/learn/codepen.png" class="img-fluid" alt="">
+              </div>
+              <div>
+                <a class="learn-link btn btn-large btn-common" href=""> Code Pen <i class="fas fa-external-link-alt"></i></a>
               </div>
             </div>
           </div>
         </div>
     </section>
-    <!-- /Contact -->
+    <!-- /Learn -->
+
+
+    <!-- Certificates  -->
+    <section id="certificates" class="section-bg page-section">
+        <div class="container">
+            <div class="section-header row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">My Certificates</h2>
+                        <p class="wow fadeInDown" data-wow-delay="0.2s">Here is some of my certificates. I do not believe a lot in certificates but I add them here just to show that the pathway of success is paved with a lot of hard working. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificates-wrapper">
+                <div class="filters filter-button-group">
+                    <ul>
+                        <li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
+                        <li><a href="javascript:void(0);" data-filter="udacity">Udacity</a></li>
+                        <li><a href="javascript:void(0);" data-filter="udemy">Udemy</a></li>
+                        <li><a href="javascript:void(0);" data-filter="others">Others</a></li>
+                    </ul>
+                </div>
+                <div id="certificates-container" class="isotope">
+                    <div class="grid-item" data-filter="udacity">
+                        <a class="popupimg" href="public/assets/img/certificates/udacity-fullstak.png">
+                        <img class="img-fluid" src="public/assets/img/certificates/udacity-fullstak.png">
+                        </a>
+                        <div class="overlay">Full Stack</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udacity">
+                        <a class="popupimg" href="public/assets/img/certificates/udacity-dataScience.png">
+                        <img class="img-fluid" src="public/assets/img/certificates/udacity-dataScience.png">
+                        </a>
+                        <div class="overlay">Data Science</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udacity">
+                        <a class="popupimg" href="public/assets/img/certificates/udacity-AI.png">
+                        <img class="img-fluid" src="public/assets/img/certificates/udacity-AI.png">
+                        </a>
+                        <div class="overlay">Artificiel Inteligence</div>
+                    </div>
+
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/udamy-sass.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/udamy-sass.jpg">
+                        </a>
+                        <div class="overlay">Sass</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/BootstrapJQuery.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/BootstrapJQuery.jpg">
+                        </a>
+                        <div class="overlay">Bootstrap & JQuery</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/udemy-bootstrap.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/udemy-bootstrap.jpg">
+                        </a>
+                        <div class="overlay">Bootstrap</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/udemy-webdesign.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/udemy-webdesign.jpg">
+                        </a>
+                        <div class="overlay">Web Design</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/udemy-wordpress.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/udemy-wordpress.jpg">
+                        </a>
+                        <div class="overlay">Wordpress</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="udemy">
+                        <a class="popupimg" href="public/assets/img/certificates/udemy-wordpress-elementor.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/udemy-wordpress-elementor.jpg">
+                        </a>
+                        <div class="overlay">Wordpress</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="others">
+                        <a class="popupimg" href="public/assets/img/certificates/onemonth-html.PNG">
+                        <img class="img-fluid" src="public/assets/img/certificates/onemonth-html.PNG">
+                        </a>
+                        <div class="overlay">HTML</div>
+                    </div>
+                    <div class="grid-item" data-filter="others">
+                        <a class="popupimg" href="public/assets/img/certificates/onemonth-responsivedesign.PNG">
+                        <img class="img-fluid" src="public/assets/img/certificates/onemonth-responsivedesign.PNG">
+                        </a>
+                        <div class="overlay">Responsive Design</div>
+                    </div>
+                    <div class="grid-item" data-filter="others">
+                        <a class="popupimg" href="public/assets/img/certificates/onemonth-javascript.PNG">
+                        <img class="img-fluid" src="public/assets/img/certificates/onemonth-javascript.PNG">
+                        </a>
+                        <div class="overlay">Java Script</div>
+                    </div>
+                    <div class="grid-item" data-filter="others">
+                        <a class="popupimg" href="public/assets/img/certificates/fwd.PNG">
+                        <img class="img-fluid" src="public/assets/img/certificates/fwd.PNG">
+                        </a>
+                        <div class="overlay">Web Developement</div>
+                    </div>
+
+                    <div class="grid-item" data-filter="others">
+                        <a class="popupimg" href="public/assets/img/certificates/SoloLearnHtml.jpg">
+                        <img class="img-fluid" src="public/assets/img/certificates/SoloLearnHtml.jpg">
+                        </a>
+                        <div class="overlay">HTML</div>
+                    </div>
+
+
+
+                </div>
+                <div class="isotope-pager">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Certificates -->
+
+    <!-- Portfolio  -->
+    <section id="portfolio" class="section-bg page-section">
+        <div class="container">
+            <div class="section-header row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">My Portfolio</h2>
+                        <!-- <p class="wow fadeInDown" data-wow-delay="0.2s">Here is a set of my projects </p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="projects-wrapper">
+                <!-- Project 1 -->
+                <div id="card" class="card">
+                    <div id="project1" class="card-header">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="read-more">
+                            <p>Bootstrap Business Website</p>
+                            <i class="fas fa-caret-up clignot"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-box">
+                                    <h3 class="card-body-title">Bootstrap Business Website</h3>
+                                    <p class="card-body-desc"> This is a business portfolio for private school made with bootstrap.</p>
+                                    <p class="card-body-keys"> <i class="fas fa-tag"></i> html, css, js, bootstrap, sass, jquery, git </p>
+                                    <div class="card-body-action">
+                                        <a class="btn btn-border" href="https://github.com/DinaTaklit/OxbridgeIt" target="_blank"><i class="fas fa-code"></i>Code</a>
+                                        <a class="btn btn-border" href="https://dinataklit.github.io/OxbridgeIt/" target="_blank"><i class="fas fa-link"></i>Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div id="card" class="card">
+                    <div id="project2" class="card-header">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="read-more">
+                            <p>Pure Html,Css Agency Template</p>
+                            <i class="fas fa-caret-up clignot"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-box">
+                                    <h3 class="card-body-title">Landing Page</h3>
+                                    <p class="card-body-desc">Agency landing page made with pure html & css.</p>
+                                    <p class="card-body-keys"> <i class="fas fa-tag"></i> html, css, js, git </p>
+                                    <div class="card-body-action">
+                                        <a class="btn btn-border" href="https://github.com/DinaTaklit/AgencyTemplatePureHTMLCSS" target="_blank"><i class="fas fa-code"></i>Code</a>
+                                        <a class="btn btn-border" href="https://dinataklit.github.io/AgencyTemplatePureHTMLCSS/" target="_blank"><i class="fas fa-link"></i>Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div id="card" class="card">
+                    <div id="project3" class="card-header">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="read-more">
+                            <p>Bootstrap Painting Template</p>
+                            <i class="fas fa-caret-up clignot"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-box">
+                                    <h3 class="card-body-title">Bootstrap painting Landing Page</h3>
+                                    <p class="card-body-desc">Landing page made with bootstrap and the power of flex box and grid layout.</p>
+                                    <p class="card-body-keys"> <i class="fas fa-tag"></i> html, css, js, bootstrap 4, git </p>
+                                    <div class="card-body-action">
+                                        <a class="btn btn-border" href="https://github.com/DinaTaklit/Creating-a-Sitewith-CSS-Gridand-Bootstrap4" target="_blank"><i class="fas fa-code"></i>Code</a>
+                                        <a class="btn btn-border" href="https://dinataklit.github.io/Creating-a-Sitewith-CSS-Gridand-Bootstrap4/" target="_blank"><i class="fas fa-link"></i>Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div id="card" class="card">
+                    <div id="project4" class="card-header">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="read-more">
+                            <p>Bootstrap CV Template</p>
+                            <i class="fas fa-caret-up clignot"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-box">
+                                    <h3 class="card-body-title">Bootstrap CV Template</h3>
+                                    <p class="card-body-desc">This is a cv template made with bootstrap.</p>
+                                    <p class="card-body-keys"> <i class="fas fa-tag"></i> html, css, bootstrap </p>
+                                    <div class="card-body-action">
+                                        <a class="btn btn-border" href="https://github.com/DinaTaklit/MyCV" target="_blank"><i class="fas fa-code"></i>Code</a>
+                                        <a class="btn btn-border" href="https://dinataklit.github.io/MyCV/" target="_blank"><i class="fas fa-link"></i>Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div id="card" class="card">
+                    <div id="project5" class="card-header">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="read-more">
+                            <p>Html,Css Lnading page</p>
+                            <i class="fas fa-caret-up clignot"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-box">
+                                    <h3 class="card-body-title">Pure Html, Css Landing Page</h3>
+                                    <p class="card-body-desc">This is an awesome landing page made with pure html, css code.</p>
+                                    <p class="card-body-keys"> <i class="fas fa-tag"></i> html, css</p>
+                                    <div class="card-body-action">
+                                        <a class="btn btn-border" href="https://github.com/DinaTaklit/WebSiteWithPureHTML_CSS" target="_blank"><i class="fas fa-code"></i>Code</a>
+                                        <a class="btn btn-border" href="https://dinataklit.github.io/WebSiteWithPureHTML_CSS/" target="_blank"><i class="fas fa-link"></i>Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div id="card" class="card">
+                    <div id="project6" class="card-header">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="read-more">
+                            <p>My first Portfolio</p>
+                            <i class="fas fa-caret-up clignot"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-box">
+                                    <h3 class="card-body-title">Bootstrap Portfolio</h3>
+                                    <p class="card-body-desc">That was my first portfolio made with bootstrap</p>
+                                    <p class="card-body-keys"> <i class="fas fa-tag"></i> html, css, js, bootstrap, git </p>
+                                    <div class="card-body-action">
+                                        <a class="btn btn-border" href="https://github.com/DinaTaklit/My-First-Portfolio" target="_blank"><i class="fas fa-code"></i>Code</a>
+                                        <a class="btn btn-border" href="https://dinataklit.github.io/My-First-Portfolio/" target="_blank"><i class="fas fa-link"></i>Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div id="card" class="card">
+                    <div id="project7" class="card-header">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="read-more">
+                            <p>Html, Css Store Template</p>
+                            <i class="fas fa-caret-up clignot"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-box">
+                                    <h3 class="card-body-title">Pure Html,Css Store Template</h3>
+                                    <p class="card-body-desc">This store landing page template made with pure html, css.</p>
+                                    <p class="card-body-keys"> <i class="fas fa-tag"></i> html, css, git </p>
+                                    <div class="card-body-action">
+                                        <a class="btn btn-border" href="https://github.com/DinaTaklit/Vegan-Store-Simple-Website-Template" target="_blank"><i class="fas fa-code"></i>Code</a>
+                                        <a class="btn btn-border" href="https://dinataklit.github.io/Vegan-Store-Simple-Website-Template/" target="_blank"><i class="fas fa-link"></i>Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div id="card" class="card">
+                    <div id="project8" class="card-header">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="read-more">
+                            <p>Wordpress Website</p>
+                            <i class="fas fa-caret-up clignot"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-box">
+                                    <h3 class="card-body-title">Wordpress Club Website</h3>
+                                    <p class="card-body-desc">This website made for <a href="https://www.facebook.com/DZ.Inventors" target="_blank">Dz inventors Club</a> .</p>
+                                    <p class="card-body-keys"> <i class="fas fa-tag"></i> html, css, js </p>
+                                    <div class="card-body-action">
+                                        <!-- <a class="btn btn-border" href=""><i class="fas fa-code"></i>Code</a> -->
+                                        <a class="btn btn-border" href="https://dzinventors.com"><i class="fas fa-link"></i>Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div id="card" class="card">
+                    <div id="project9" class="card-header">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="read-more">
+                            <p>Laravel Ecomerce Website UI</p>
+                            <i class="fas fa-caret-up clignot"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-box">
+                                    <h3 class="card-body-title">Redesign Website' UI</h3>
+                                    <p class="card-body-desc">The new UI was rebuild with bootstrap, css , laravel blade. We where a team of 02 memeber working under agile methode.</p>
+                                    <p class="card-body-keys"> <i class="fas fa-tag"></i> html, css, js, bootstrap, laravel blade, laravel, Agile, git, Team Work</p>
+                                    <div class="card-body-action">
+                                        <!-- <a class="btn btn-border" href=""><i class="fas fa-code"></i>Code</a> -->
+                                        <a class="btn btn-border" href="https://avosoffres.fr"><i class="fas fa-link"></i>Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /Portfolio -->
+
+    <!-- My pens  -->
+    <section id="pens" class="section-bg page-section">
+        <!--  SVG Divider -->
+        <svg class="dividerTop" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 120">
+            <path fill-rule="evenodd" fill="#171717" d="M0,37.9621684 C300.495844,88.578393 620.495844,88.578393 960,37.9621684 C1299.50416,-12.6540561 1619.50416,-12.6540561 1920,37.9621684 L1920,102 L0,102 L0,37.9621684 Z" transform="matrix(1 0 0 -1 0 102)"></path>
+        </svg>
+
+      <div class="container">
+          <div class="section-header row justify-content-center">
+              <div class="col-12">
+                  <div class="section-title-header text-center">
+                      <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">My Pens</h2>
+                      <p class="wow fadeInDown" data-wow-delay="0.2s">Here is some of my pens find out more here in my pen <span class="link"> <a href="https://codepen.io/DinaTAKLIT">codepen.io/DinaTAKLI</a></span> </p>
+                  </div>
+              </div>
+          </div>
+
+        <div class="pens-wrapper">
+
+        <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="result" data-user="Taklit Dina" data-slug-hash="QWWEYrJ" data-pen-title="CardsGame">
+            <span>See the Pen <a href="https://codepen.io/DinaTAKLIT/pen/QWWEYrJ">
+                </a> by Dina TAKLIT (<a href="https://codepen.io/DinaTAKLIT">@DinaTAKLIT</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+            <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </p>
+
+        <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="result" data-user="EricPorter" data-slug-hash="bGNwBNz" data-pen-title="Button Generator">
+            <span>See the Pen <a href="https://codepen.io/DinaTAKLIT/pen/bGNwBNz">
+              </a> by Dina TAKLIT (<a href="https://codepen.io/DinaTAKLIT">@DinaTAKLIT</a>)
+               on <a href="https://codepen.io">CodePen</a>.
+            </span>
+        </p>
+
+        <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="result" data-user="EricPorter" data-slug-hash="RwNWqXM"  data-pen-title="GAnalogClock">
+            <span>See the Pen <a href="https://codepen.io/DinaTAKLIT/pen/RwNWqXM">
+            </a> by Dina TAKLIT (<a href="https://codepen.io/DinaTAKLIT">@DinaTAKLIT</a>)
+             on <a href="https://codepen.io">CodePen</a>.
+          </span>
+        </p>
+
+        <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="result" data-user="EricPorter" data-slug-hash="vYKYYzV"  data-pen-title="ProfileCard">
+            <span>See the Pen <a href="https://codepen.io/DinaTAKLIT/pen/vYKYYzV">
+                </a> by Dina TAKLIT (<a href="https://codepen.io/DinaTAKLIT">@DinaTAKLIT</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+          </span>
+        </p>
+
+        <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="result" data-user="EricPorter" data-slug-hash="NWNNjOE"  data-pen-title="Word Swipe Animation">
+            <span>See the Pen <a href="https://codepen.io/DinaTAKLIT/pen/NWNNjOE">
+                </a> by Dina TAKLIT (<a href="https://codepen.io/DinaTAKLIT">@DinaTAKLIT</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+             </span>
+        </p>
+
+        <p class="codepen" data-height="350" data-theme-id="dark" data-default-tab="result" data-user="EricPorter" data-slug-hash="BaoWYrp" data-pen-title="StarsMatchGame">
+            <span>See the Pen <a href="https://codepen.io/DinaTAKLIT/pen/BaoWYrp">
+                </a> by Dina TAKLIT (<a href="https://codepen.io/DinaTAKLIT">@DinaTAKLIT</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+            </span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+        </div>
+
+        <!--  SVG Divider -->
+        <svg class="dividerBottom" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 120">
+            <path fill-rule="evenodd" fill="#020202" d="M0,55.9621684 C300.495844,106.578393 620.495844,106.578393 960,55.9621684 C1299.50416,5.34594386 1619.50416,5.34594386 1920,55.9621684 L1920,120 L0,120 L0,55.9621684 Z"></path>
+        </svg>
+      </div>
+    </section>
+    <!-- /My pens -->
+
+    <!-- Social Activities  -->
+    <section id="social-activities" class="section-bg page-section">
+        <div class="container">
+            <div class="section-header row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">My Social Activities</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row solcial-activites-wrapper">
+                <div class="col-md-6 organizations-wrapper">
+                    <div class="outer">
+                        <div>
+                            <p class="static first-item">I am </p>
+                        </div>
+                        <div class="dynmaic-container">
+                            <div class="inner">
+                                <div class="activity-dynamic-item">event organizer</div>
+                                <div class="activity-dynamic-item">speaker</div>
+                                <div class="activity-dynamic-item">facilitator</div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="static second-item">at </p>
+                        </div>
+                    </div>
+                    <div class="organization-logos">
+                       <img src="public/assets/img/social_activities/gdg.png" alt="">
+                       <img src="public/assets/img/social_activities/codeshare.png" alt="">
+                       <img src="public/assets/img/social_activities/wikistage.png" alt="">
+                       <img src="public/assets/img/social_activities/TissemsiltRead.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 social-pics-wrapper">
+                    <div class="carousel-container position-relative row">
+                        <div id="activities-carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-slide-number="0">
+                                    <img src="public/assets/img/social_activities/activities-pic/1.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">GDG Algiers:</span> Dev Fest 2018
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-slide-number="1">
+                                    <img src="public/assets/img/social_activities/activities-pic/2.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">Code & Share:</span> 100 smiles 2019
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-slide-number="2">
+                                    <img src="public/assets/img/social_activities/activities-pic/3.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">Code & Share:</span> 100 smiles 2019
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-slide-number="3">
+                                    <img src="public/assets/img/social_activities/activities-pic/4.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">Code & Share:</span> 100 smiles 2019
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-slide-number="4">
+                                    <img src="public/assets/img/social_activities/activities-pic/5.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">Code & Share:</span> 100 smiles 2019
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-slide-number="5">
+                                    <img src="public/assets/img/social_activities/activities-pic/6.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">Tissemsilt Read Association:</span>Primary Student Read Day
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-slide-number="6">
+                                    <img src="public/assets/img/social_activities/activities-pic/7.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">Tissemsilt Read Association:</span>Primary Student Read Day
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-slide-number="7">
+                                    <img src="public/assets/img/social_activities/activities-pic/8.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">Tissemsilt Read Association:</span>Primary Student Read Day
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-slide-number="8">
+                                    <img src="public/assets/img/social_activities/activities-pic/9.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">Tissemsilt Read Association:</span>Primary Student Read Day
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-slide-number="9">
+                                    <img src="public/assets/img/social_activities/activities-pic/10.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">Tissemsilt Read Association:</span> Primary Student Read Day
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-slide-number="10">
+                                    <img src="public/assets/img/social_activities/activities-pic/11.jpg" class="d-block w-100" alt="...">
+                                    <div class="activity-text">
+                                        <p> <span class="activity-title">Tissemsilt Read Association:</span> University Student Read Day
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Carousel Navigation -->
+                        <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-0" class="thumb col-2 col-sm-2 px-1 py-2 selected" data-target="#activities-carousel" data-slide-to="0">
+                                            <img src="public/assets/img/social_activities/activities-pic/1.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-1" class="thumb col-2 col-sm-2 px-1 py-2" data-target="#activities-carousel" data-slide-to="1">
+                                            <img src="public/assets/img/social_activities/activities-pic/2.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-2" class="thumb col-2 col-sm-2 px-1 py-2" data-target="#activities-carousel" data-slide-to="2">
+                                            <img src="public/assets/img/social_activities/activities-pic/3.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-3" class="thumb col-2 col-sm-2 px-1 py-2" data-target="#activities-carousel" data-slide-to="3">
+                                            <img src="public/assets/img/social_activities/activities-pic/4.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-4" class="thumb col-2 col-sm-2 px-1 py-2" data-target="#activities-carousel" data-slide-to="4">
+                                            <img src="public/assets/img/social_activities/activities-pic/5.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-5" class="thumb col-2 col-sm-2 px-1 py-2" data-target="#activities-carousel" data-slide-to="5">
+                                            <img src="public/assets/img/social_activities/activities-pic/6.jpg" class="img-fluid" alt="...">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row mx-0">
+                                        <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#activities-carousel" data-slide-to="6">
+                                            <img src="public/assets/img/social_activities/activities-pic/7.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-7" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#activities-carousel" data-slide-to="7">
+                                            <img src="public/assets/img/social_activities/activities-pic/8.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-8" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#activities-carousel" data-slide-to="8">
+                                            <img src="public/assets/img/social_activities/activities-pic/9.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-9" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#activities-carousel" data-slide-to="9">
+                                            <img src="public/assets/img/social_activities/activities-pic/10.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div id="carousel-selector-9" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#activities-carousel" data-slide-to="10">
+                                            <img src="public/assets/img/social_activities/activities-pic/11.jpg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                        <div class="col-2 px-1 py-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Social Activities -->
+
+    <!-- Footer  -->
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-4 pb-4">
+                <div class="grid-cta">
+                    <div class="single-cta mb-30">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h2>Call me</h2>
+                            <span>+213556418611</span>
+                        </div>
+                    </div>
+                    <div class="single-cta logo-contact mb-30">
+                        <figure>
+                            <img class="image-fluid" src="public/assets/img/logo.jpg">
+                            <div class="contact">
+                                <a class="tw" href="https://www.linkedin.com/in/dina-taklit/"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="fb" href="https://www.facebook.com/dina.taklit/"  target="_blank"> <i class="fab fa-facebook-f"></i></a>
+                                <a class="gp" href="https://www.youtube.com/channel/UCx4gIbgyVpcAZwAnKEUfJVA" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a class="ma" href="https://github.com/DinaTaklit" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="single-cta mb-30">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h2>Mail me</h2>
+                            <span>ez_taklit@esi.dz</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html">
+                                    <h2 class="heading script-font">
+                                        Dina TAKLIT
+                                    </h2>
+                                </a>
+                            </div>
+                            <div class="footer-text">
+                                <p>I am Dina TAKLIT a Software Engineer & web developer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h2>Useful Links</h2>
+                            </div>
+                            <ul class="footer-widget-links">
+                                <li><a href="#top">Home</a></li>
+                                <li><a href="#pens">Pens</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#learn">Where do I learn?</a></li>
+                                <li><a href="#career">Career</a></li>
+                                <li><a href="#certificates">Certificates</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#social-activities">Social activities</a></li>
+                                <li><a href="#portfolio">portfolio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h2>Keep in touch</h2>
+                            </div>
+                            <div class="contact-social">
+                                <ul>
+                                    <li><a class="hover-target" href="https://www.linkedin.com/in/dina-taklit/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a class="hover-target" href="https://www.facebook.com/dina.taklit/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a class="hover-target" href="https://www.youtube.com/channel/UCx4gIbgyVpcAZwAnKEUfJVA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a class="hover-target" href="https://www.quora.com/profile/Dina-Taklit" target="_blank"><i class="fab fa-quora"></i></a></li>
+                                </ul>
+                                <ul>
+                                    <li><a class="hover-target" href="https://medium.com/@DinaTAKLIT" target="_blank"><i class="fab fa-medium-m"></i></a></li>
+                                    <li><a class="hover-target" href="https://github.com/DinaTaklit" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a class="hover-target" href="https://stackoverflow.com/users/9039646/dina-taklit" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+                                    <li><a class="hover-target" href="https://codepen.io/DinaTAKLIT" target="_blank"><i class="fab fa-codepen"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2020, Dina TAKLIT, All Right Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#top">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
 
 
 
@@ -160,8 +1217,20 @@
     <script src="public/vendor/jquery/jquery-3.5.1.slim.min.js"></script>
     <script src="public/vendor/poper.min.js"></script>
     <script src="public/vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- Magnific-popup -->
+    <script src="public/vendor/magnific-popup/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- isotope -->
+    <!-- Filter and sort magical layouts -->
+    <script src="public/vendor/isotop/3.0.6/isotope.pkgd.min.js"></script>
 
+    <!-- Animejs add animation to the heading -->
+    <script src="public/vendor/animejs/3.2.1/anime.min.js"></script>
+    <!-- Add wow animation for fading and other animation -->
+    <script src="public/vendor/wow/1.1.2/wow.min.js"></script>
+    <!-- Add canvas skills for js -->
+    <script src="public/vendor/canvas-skills.js"></script>
     <!-- Custom Js -->
     <script src="public/js/main.js"></script>
+
   </body>
 </html>
