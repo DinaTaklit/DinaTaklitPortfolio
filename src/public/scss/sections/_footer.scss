@@ -1,6 +1,7 @@
 /**************** Footer *********/
 .footer-section{
-    background: #151414;
+    // background: #151414;
+    box-shadow: -1px 1px 11px rgba(0,0,0,.4);
     position: relative;
     color: $gray-600;
     .footer-cta {
@@ -30,6 +31,7 @@
             }
         }
         .single-cta.logo-contact{
+            padding-left: 4rem;
             figure {
                 position: relative;
                 overflow: hidden;
@@ -118,7 +120,7 @@
         }
         .footer-widget-heading{
             h2{
-                color: #fff;
+
                 font-size: 1.7rem;
                 margin-bottom: 3.5rem;
                 position: relative;
