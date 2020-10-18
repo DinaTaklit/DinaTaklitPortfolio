@@ -89,13 +89,13 @@ ul li, ol li {
 
 // Highlight color customization
 
-::-moz-selection {
-    background: $primary;
-    text-shadow: none;
-}
+// ::-moz-selection {
+//     background: $primary;
+//     text-shadow: none;
+//}
 
 ::selection {
-    background: $primary;
+    background:  #ffb7b7;
     text-shadow: none;
 }
 
@@ -103,6 +103,6 @@ img::selection {
     background: transparent;
 }
 
-img::-moz-selection {
-    background: transparent;
-}
+// img::-moz-selection {
+//     background: transparent;
+// }
