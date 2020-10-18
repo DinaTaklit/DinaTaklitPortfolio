@@ -57,7 +57,6 @@ $(document).ready( function() {
 		for( var i = 0; i < responsiveIsotope.length; i++ ) {
 			if( $(window).width() <= responsiveIsotope[i][0] ) {
                 pages = responsiveIsotope[i][1];
-                console.log('pages = '+ pages);
 				break;
 			}
 		}

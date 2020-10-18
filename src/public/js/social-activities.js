@@ -1,7 +1,5 @@
 /** Social activities organizations**/
 const items = Array.from(document.getElementsByClassName('activity-dynamic-item'));
-console.log("items here");
-console.log(items);
 items.forEach((item,i) => {
 	let prev = items[i-1];
 	if (!prev) prev = items[items.length - 1];
@@ -52,18 +50,19 @@ $('#activities-carousel').carousel({
     $('[id=carousel-selector-'+id+']').addClass('selected');
   });
   // when user swipes, go next or previous
-  $('#activities-carousel').swipe({
-    fallbackToMouseEvents: true,
-    swipeLeft: function(e) {
-      $('#activities-carousel').carousel('next');
-    },
-    swipeRight: function(e) {
-      $('#activities-carousel').carousel('prev');
-    },
-    allowPageScroll: 'vertical',
-    preventDefaultEvents: false,
-    threshold: 75
-  });
+
+//   $('#activities-carousel').swipe({
+//     fallbackToMouseEvents: true,
+//     swipeLeft: function(e) {
+//       $('#activities-carousel').carousel('next');
+//     },
+//     swipeRight: function(e) {
+//       $('#activities-carousel').carousel('prev');
+//     },
+//     allowPageScroll: 'vertical',
+//     preventDefaultEvents: false,
+//     threshold: 75
+//   });
   /*
   $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
