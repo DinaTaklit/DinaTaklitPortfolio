@@ -13,3 +13,4 @@ var options = {
       document.getElementById('skillCanvasContainer').style.display = 'none';
     }
   };
+
